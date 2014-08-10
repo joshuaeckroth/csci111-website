@@ -1,0 +1,163 @@
+html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000000;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#container-tight {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 0.8em 0;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: #336699;
+}
+
+table#index {
+    border: none;
+}
+
+table#index td {
+    width: 25%;
+    vertical-align: top;
+}
+
+td.metabox a,
+td.metabox a:visited,
+td.metabox a:active,
+td.metabox a:hover {
+    color: #113b63;
+}
+
+.post-title {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.post-categories {
+    color: #666;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.post-date {
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.post-due {
+    color: #666;
+}
+
+ul.posts li {
+    margin: 0.5em 0;
+    display: block;
+}
+
+td.metabox {
+    background: #999;
+    color: white;
+    padding: 10px;
+}
+
+td.metabox div.classname {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+td.metabox div.semester {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+td.metabox div.email {
+    margin: 20px 0;
+}
+
+td.metabox div.officehours {
+    margin: 20px 0;
+}
+
+div.license {
+    font-size: 12px;
+    clear: both;
+    padding-top: 20px;
+}
+
+div.metatop {
+    width: 20em;
+    margin-bottom: 20px;
+    float: right;
+    text-align: right;
+}
+
+div.metatop span.homelink {
+    margin-right: 10px;
+}
+
+div.metatop span.chat div#plupperButton {
+    width: 100px;
+}
+
+div.metatop span.chat div#plupperButton,
+div.metatop span.chat div#plupperButton img {
+    display: inline;
+}
+
+div.metatop span.chat div#plupperButton img {
+    margin-bottom: -3px;
+}
+
+@media only screen and (max-width: 480px) {
+    div.metabox {
+        float: none;
+    }
+}
+
+table {
+    margin: 20px 0;
+    border: 1px solid #999;
+}
+
+td {
+    padding: 5px;
+}
+
+pre {
+    border-left: 4px solid #eee;
+    padding-left: 15px;
+}
+
+blockquote {
+    padding-left: 30px;
+    font-style: italic;
+}
