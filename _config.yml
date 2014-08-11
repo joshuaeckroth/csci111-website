@@ -1,5 +1,0 @@
-safe: true
-markdown: rdiscount
-highlighter: pygments
-permalink: /:categories/:year-:month-:day-:title.html
-
