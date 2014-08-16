@@ -71,11 +71,11 @@ code that you copied, including the source web address of the
 code. You are required to contribute most of the code in your lab; do
 not turn in a lab mostly written by other people.
 
-I am strongly in agreement with the [Stetson University Honor
-Code](http://www.stetson.edu/honorsystem/). Any form of cheating is
-not acceptable, will not be tolerated, and could lead to dismissal
-from the University. This includes plagiarism of any sort on quizzes,
-exams, or on projects. So please, do not cheat!
+I am strongly in agreement with the
+[Stetson University Honor Code](http://www.stetson.edu/other/honor-system/). Any
+form of cheating is not acceptable, will not be tolerated, and could
+lead to dismissal from the University. This includes plagiarism of any
+sort on quizzes, exams, or on projects. So please, do not cheat!
 
 ## Academic success center
 
