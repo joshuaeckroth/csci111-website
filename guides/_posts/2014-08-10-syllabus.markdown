@@ -23,20 +23,20 @@ documentation.
 We'll generally have one lab per week. Each lab assignment is a
 programming assignment.
 
-Submit your lab by adding your ZIP file to the Carmen dropbox. Due
-dates are listed on the home page of this site.
+Submit your lab by adding your ZIP file to Blackboard. Due dates are
+listed on the home page of this site.
 
 Late work is penalized. Your maximum possible score on late work is
 60/100. You can turn it in at any time (until the last day of
-class). Submit late work to the appropriate dropbox, and send me an
-email telling me you have done so, because I may not see it otherwise.
+class). Submit late work to Blackboard, and send me an email telling
+me you have done so, because I may not see it otherwise.
 
 ## Tests
 
-We have three short tests, which take place on Fridays (in the
-classroom). We have no "final exam." The tests are hand-written, so
-you don't use a computer. You won't be asked to write programs. Test
-dates are on the home page.
+We have three short tests. We have no "final exam." The tests are
+hand-written, so you don't use a computer. You won't be asked to write
+programs. Test dates are on the
+[calendar](/guides/2014-08-11-calendar.html).
 
 ## Group projects
 
