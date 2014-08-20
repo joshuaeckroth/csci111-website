@@ -18,6 +18,14 @@ in Processing, but hopefully you do not forget how to search the web
 about techincal questions and understand (often inadequate)
 documentation.
 
+## About me
+
+- Joshua Eckroth, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu)
+
+- Eliz Hall 214-9, 386-740-2519
+
+- Office hours: Mon 10-11am; Tue 12-1pm; Wed 11am-12pm; Thur 12-1pm
+
 ## Labs
 
 We'll generally have one lab per week. Each lab assignment is a
@@ -35,8 +43,15 @@ me you have done so, because I may not see it otherwise.
 
 We have three short tests. We have no "final exam." The tests are
 hand-written, so you don't use a computer. You won't be asked to write
-programs. Test dates are on the
-[calendar](/guides/2014-08-11-calendar.html).
+programs.
+
+Test dates:
+
+- Test 1: September 15
+
+- Test 2: October 13
+
+- Test 3: November 10
 
 ## Group projects
 
