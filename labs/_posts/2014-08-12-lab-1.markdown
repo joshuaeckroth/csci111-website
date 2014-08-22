@@ -6,14 +6,19 @@ due: Aug 26, 11:59pm
 
 # Lab 1
 
-We'll be programming with the tool known as Processing.
+Read about the
+[coordinate system](/guides/2014-08-14-coordinate-system.html) and
+[color](/guides/2014-08-14-color.html).
 
 Your task in this lab is to figure out how to install Processing and
-create a "sketch" (their word for a "program") that draws an animal or
-car or house (etc.). You are required to use at least one circle, one
-rectangle, and some lines. You are also required to use at least three
-different colors for stroke, fill, and background.
+create a "sketch" (their word for a "program") that draws a well-known
+cartoon character (a Simpsons character, Disney character,
+whatever). The character should be recognizable, but need not be
+perfect. You are required to use at least one circle/ellipse, one
+rectangle, one triangle, and some lines. You are also required to use
+at least three different colors for stroke, fill, and background. The
+character must be in the middle of the window.
 
-Create an "archive" of your sketch (this creates a ZIP file) and put
-it in the Carmen dropbox. You can create an archive by using the Tools
+Create an "archive" of your sketch (this creates a ZIP file) and
+submit it to Blackboard. You can create an archive by using the Tools
 menu in Processing.
