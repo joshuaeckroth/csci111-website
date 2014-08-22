@@ -1,6 +1,6 @@
 ---
 layout: index
-title: CSCI 111 Autumn 2014
+title: CSCI 111
 ---
 
 
