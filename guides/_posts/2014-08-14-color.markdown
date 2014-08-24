@@ -30,6 +30,6 @@ If you want more info, also try
 - How to set the stroke/fill/background to a specific color (e.g.,
   "purple" or "25% translucent light blue").
   
-- How to set a specific kind of stroke.
+- How to set a specific kind of stroke using `stroke()` and `strokeWeight()`.
 
 - The differences among `colorMode(RGB)` and `colorMode(HSB)`.
