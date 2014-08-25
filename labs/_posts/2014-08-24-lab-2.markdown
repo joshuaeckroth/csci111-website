@@ -11,13 +11,13 @@ and [animation 2](/videos/2014-08-14-animation-2.html).
 
 Create a program that "rains cats and dogs." In other words, draw some
 shapes that look like cats, and some that look like dogs, and animate
-them so that they fall down the screen, at a slight angle (there is a
-slight wind). You must have at least 2 cats and 2 dogs (but they can
-be the same combinations of shapes, but cats must look different than
-dogs), plus appropriate use of color. The cats/dogs must be scattered,
-not lined up together. Use the modulo (`%`) operator so that they
-"wrap around" to the top after they fall past the bottom of the
-screen.
+them so that they fall down the screen, at a slight angle **to the
+right** (there is a slight wind). You must have at least 2 cats and 2
+dogs (but they can be the same combinations of shapes, but cats must
+look different than dogs), plus appropriate use of color. The
+cats/dogs must be scattered, not lined up together. Use the modulo
+(`%`) operator so that they "wrap around" to the top after they fall
+past the bottom of the screen.
 
 Create an "archive" of your sketch (this creates a ZIP file) and
 submit it to Blackboard. You can create an archive by using the Tools
