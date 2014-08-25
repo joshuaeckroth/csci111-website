@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 1
-due: Aug 26, 11:59pm
+due: Aug 26 (MWF) 28 (MW), 11:59pm
 ---
 
 # Lab 1
