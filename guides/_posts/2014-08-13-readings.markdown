@@ -15,6 +15,8 @@ required for this class.
 
 - Color: pp 12--16
 
+- Variables & types: pp 45--53
+
 - Mouse input: pp 35--38
 
 - Keyboard input: pp 39--41
