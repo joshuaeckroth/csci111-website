@@ -68,6 +68,14 @@ type of value (see
 [variables and types notes](/guides/2014-08-29-variables-types.html)),
 so we check if it equals a particular character like `'w'`.
 
+You can also check on these keys (they don't use the single-quote
+syntax):
+
+- `ENTER`
+- `BACKSPACE`
+- `TAB`
+- `DELETE`
+
 ## Coded key presses
 
 Special keys, like up, down, control, shift, etc. cannot be detected
@@ -89,13 +97,9 @@ Here are some more key codes, for use in `if(keyCode == XYZ)` (change
 `XYZ` to one of the following):
 
 - `UP`, `DOWN`, `LEFT`, `RIGHT`
-- `ENTER`
-- `BACKSPACE`
-- `DELETE`
 - `SHIFT`
 - `CONTROL`
 - `ALT`
-- `TAB`
 
 ## A simple movement example
 
