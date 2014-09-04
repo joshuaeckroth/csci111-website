@@ -97,7 +97,7 @@ Here are some more key codes, for use in `if(keyCode == XYZ)` (change
 - `ALT`
 - `TAB`
 
-## A complete example
+## A simple movement example
 
 {% highlight java %}
 int x = 200;
@@ -157,3 +157,122 @@ void keyPressed()
 }
 {% endhighlight %}
 
+## Snake example
+
+{% highlight java %}
+int y = 0;
+int x = 200;
+int dy = 1;
+int dx = 0;
+int speed = 1;
+float h = random(0, 100);
+
+void setup()
+{
+  size(400, 400);
+  rectMode(CENTER);
+  colorMode(HSB, 100);
+  textSize(48);
+  background(0, 0, 0);
+  noStroke();
+}
+
+void draw()
+{
+  fill(h, 100, 100);
+  rect(x, y, 10, 10);
+  x = x + dx;
+  y = y + dy;
+  
+  if(x < 0 || x > 400 || y < 0 || y > 400)
+  {
+    fill(0, 0, 100);
+    text("Oh no!", 150, 200);
+  }
+}
+
+void keyPressed()
+{
+  if(key == ENTER)
+  {
+    h = random(0, 100);
+  }
+  if(key == ' ')
+  {
+    speed = speed + 1;
+  }
+  if(key == 'w' || (key == CODED && keyCode == UP))
+  {
+    dy = -speed;
+    dx = 0;
+  }
+  if(key == 's' || (key == CODED && keyCode == DOWN))
+  {
+    dy = speed;
+    dx = 0;
+  }
+  if(key == 'a' || (key == CODED && keyCode == LEFT))
+  {
+    dy = 0;
+    dx = -speed;
+  }
+  if(key == 'd' || (key == CODED && keyCode == RIGHT))
+  {
+    dy = 0;
+    dx = speed;
+  }
+}
+{% endhighlight %}
+
+## Guessing game example
+
+{% highlight java %}
+int answer = (int)random(0, 5);
+float h = 50;
+boolean win = false;
+boolean badguess = false;
+
+void setup()
+{
+  size(400, 400);
+  rectMode(CENTER);
+  colorMode(HSB, 100);
+  textSize(32);
+}
+
+void draw()
+{
+  background(0, 0, 100);
+  fill(0, 0, 0);
+  if(!win)
+  {
+    if(badguess)
+    {
+      text("Bad guess!", 50, 100);
+    }
+    text("Guess the number", 100, 200);
+  }
+  else
+  {
+    text("You win!", 100, 300);
+  }
+}
+
+void keyPressed()
+{
+  if((key == '0' && answer == 0)
+     || (key == '1' && answer == 1)
+     || (key == '2' && answer == 2)
+     || (key == '3' && answer == 3)
+     || (key == '4' && answer == 4)
+     || (key == '5' && answer == 5))
+  {
+    win = true;
+    badguess = false;
+  }
+  else
+  {
+    badguess = true;
+  }
+}
+{% endhighlight %}
