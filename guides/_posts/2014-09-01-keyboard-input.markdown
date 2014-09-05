@@ -161,7 +161,86 @@ void keyPressed()
 }
 {% endhighlight %}
 
-## Snake example
+## Multiple key presses (diagonal movement)
+
+{% highlight java %}
+int x = 200;
+int y = 200;
+boolean upPressed = false;
+boolean downPressed = false;
+boolean leftPressed = false;
+boolean rightPressed = false;
+
+void setup()
+{
+  size(800, 800);
+}
+
+void draw()
+{
+  background(0);
+  fill(255);
+  rect(x, y, 100, 100);
+  if(upPressed)
+  {
+    y = y - 2;
+  }
+  if(downPressed)
+  {
+    y = y + 2;
+  }
+  if(leftPressed)
+  {
+    x = x - 2;
+  }
+  if(rightPressed)
+  {
+    x = x + 2;
+  }
+}
+
+void keyPressed()
+{
+  if(key == CODED && keyCode == UP)
+  {
+    upPressed = true;
+  }
+  if(key == CODED && keyCode == DOWN)
+  {
+    downPressed = true;
+  }
+  if(key == CODED && keyCode == LEFT)
+  {
+    leftPressed = true;
+  }
+  if(key == CODED && keyCode == RIGHT)
+  {
+    rightPressed = true;
+  }
+}
+
+void keyReleased()
+{
+  if(key == CODED && keyCode == UP)
+  {
+    upPressed = false;
+  }
+  if(key == CODED && keyCode == DOWN)
+  {
+    downPressed = false;
+  }
+  if(key == CODED && keyCode == LEFT)
+  {
+    leftPressed = false;
+  }
+  if(key == CODED && keyCode == RIGHT)
+  {
+    rightPressed = false;
+  }
+}
+{% endhighlight %}
+
+## Tron example
 
 {% highlight java %}
 int y = 0;
@@ -224,6 +303,93 @@ void keyPressed()
   {
     dy = 0;
     dx = speed;
+  }
+}
+{% endhighlight %}
+
+## Tron example with crash detection
+
+{% highlight java %}
+int x = 400;
+int y = 300;
+int dx = 1;
+int dy = 0;
+int speed = 1;
+
+void setup()
+{
+  size(800, 600);
+  background(0);
+  noStroke();
+  frameRate(60);
+  rectMode(CENTER);
+}
+
+void draw()
+{
+  // if we're moving left/right (dx != 0), check left/right pixel
+  // if we're moving up/down (dy != 0), check up/down pixel
+  if ((dx != 0 && get(x+dx*4, y) == color(255))
+    || (dy != 0 && get(x, y+dy*4) == color(255)))
+  {
+    textSize(32);
+    fill(255);
+    text("Oh no!", 200, 200);
+    noLoop(); // stop the frames, stop everything
+  }
+  else  // we didn't lose, let's keep drawing
+  {
+    if (frameCount > 0 && frameCount % (60*5) == 0)
+    {
+      // 5 seconds have passed, let's increase the speed
+      speed++;
+    }
+
+    rect(x, y, 4, 4);
+
+    x = x + dx * speed;
+    y = y + dy * speed;
+
+    if (x < 0)
+    {
+      x = width;
+    }
+    if (y < 0)
+    {
+      y = height;
+    }
+    if (x > width)
+    {
+      x = 0;
+    }
+    if (y > height)
+    {
+      y = 0;
+    }
+  }
+}
+
+void keyPressed()
+{
+  if (key == CODED && keyCode == UP)
+  {
+    dy = -1;
+    dx = 0;
+  }
+  if (key == CODED && keyCode == DOWN)
+  {
+    dy = 1;
+    dx = 0;
+  }
+  if (key == CODED && keyCode == LEFT)
+  {
+    dy = 0;
+    dx = -1;
+  }
+  if (key == CODED && keyCode == RIGHT)
+  {
+    dy = 0;
+    dx = 1;
   }
 }
 {% endhighlight %}
