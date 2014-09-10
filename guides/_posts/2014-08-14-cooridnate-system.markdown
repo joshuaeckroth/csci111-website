@@ -35,5 +35,5 @@ If you want more info, also try
   
 - How to draw an arc from specific start and stop radians.
 
-- The differences among `rectMode(CENTER)`, `rectMode(CORNERS)`,
+- The differences among `rectMode(CENTER)`, `rectMode(CORNER)`,
   `rectMode(RADIUS)`, and the same for `ellipseMode`.
