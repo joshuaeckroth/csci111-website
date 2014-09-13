@@ -13,6 +13,8 @@ videos for those topics.
 **You may bring a 5x7 notecard with any notes you want (front & back),
 to use during the test.**
 
+See the [Test 1 Guide Solutions](/guides/2014-09-13-test-1-guide-solutions.html).
+
 ## Color
 
 - what is the command to change to HSB mode?
@@ -51,10 +53,10 @@ Some of these questions have a range of valid answers since, e.g.,
 What is the result of each of the following computations?
 
 {% highlight java %}
-55 % 10
-55 / 10
+57 % 10
+57 / 10
 2.4 / 2.0
-pow(2.0, 2.0)
+pow(3.0, 2.0)
 {% endhighlight %}
 
 If we have `int x = 5`, what is the value of `x` after each of these commands:
