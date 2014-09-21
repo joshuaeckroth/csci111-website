@@ -1,0 +1,12 @@
+---
+layout: post
+title: "for() loops"
+---
+
+# for() loops
+
+Watch the [corresponding video](/videos/2014-09-20-for-loops.html).
+
+## Diagram showing the order of execution
+
+![for loop diagram](/images/for-loop-diagram.png)
