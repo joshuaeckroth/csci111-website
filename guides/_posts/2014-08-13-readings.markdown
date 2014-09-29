@@ -27,4 +27,4 @@ required for this class.
 
 - Loops: pp 81--97
 
-
+- Arrays: pp 141--152, 158--159
