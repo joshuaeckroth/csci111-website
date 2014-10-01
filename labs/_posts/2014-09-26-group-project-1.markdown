@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group project 1
-due: Oct 6, 11:59pm
+due: Oct 8, 11:59pm
 ---
 
 # Group project 1
