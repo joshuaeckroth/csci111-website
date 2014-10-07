@@ -126,6 +126,13 @@ void setup()
       p2walk[i] = loadImage("p2_walk"+(i+1)+".png");
     }
   }
+
+  // or, if you have one image and want to extract parts out of it,
+  // you can do something like this:
+  //
+  // PImage master = loadImage("masterimage.png");
+  // PImage img1 = master.get(x, y, w, h); // location of a rectangle
+  // ...etc.
 }
 
 void draw()
