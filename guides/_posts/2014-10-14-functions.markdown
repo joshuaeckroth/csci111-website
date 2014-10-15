@@ -223,4 +223,70 @@ void drawZoog(color eyeColor) {
 }
 {% endhighlight %}
 
+## Another example
 
+{% highlight java %}
+int offsetX;
+int offsetY;
+
+void setup()
+{
+  size(600, 600);
+  reset();
+}
+
+void reset()
+{
+  offsetX = 0;
+  offsetY = 0;
+}
+
+void draw()
+{
+  background(0);
+  for(int row = 0; row < 10; row++)
+  {
+    for(int col = 0; col < 10; col++)
+    {
+      drawEllipse(calcEllipseX(col), calcEllipseY(row), row % 2 == 0);
+    }
+  }
+  offsetX++;
+  offsetY++;
+}
+
+int calcEllipseX(int col)
+{
+  int x = 50*col+offsetX;
+  return x;
+}
+
+int calcEllipseY(int row)
+{
+  int y = 50*row+offsetY;
+  return y;
+}
+
+void drawEllipse(int x, int y, boolean filled)
+{
+  if(filled)
+  {
+    fill(255);
+  }
+  else
+  {
+    fill(0);
+  }
+  stroke(128);
+  strokeWeight(5);
+  ellipse(x, y, 50, 50);
+}
+
+void keyPressed()
+{
+  if(key == ' ')
+  {
+    reset();
+  }
+}
+{% endhighlight %}
