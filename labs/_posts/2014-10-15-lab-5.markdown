@@ -26,7 +26,7 @@ Be sure to use these functions in the code (e.g., in the `draw` function). You w
 
 ### Option 2
 
-Modify the "touch blinky" game in the [Game Design 1](/videos/2014-09-26-game-design-1.html) notes. You need at least three functions:
+Modify the "candy catch" game in the [Game Design 1](/videos/2014-09-26-game-design-1.html) notes. You need at least three functions:
 
 - A `void` function that draws the score on the screen. This function does not need any arguments.
 - A `void` function that moves the basket (`px` variable). This function should have one argument which indicates how much to move it (positive or negative). Keep the `constrain` as found in the `keyPressed` function in the original code.
