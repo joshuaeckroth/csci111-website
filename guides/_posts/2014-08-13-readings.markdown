@@ -30,3 +30,5 @@ required for this class.
 - Arrays: pp 141--152, 158--159
 
 - Functions: pp 101--119
+
+- Object-oriented programming: pp 121--137
