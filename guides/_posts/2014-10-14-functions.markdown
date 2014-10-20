@@ -267,7 +267,7 @@ int calcEllipseY(int row)
   return y;
 }
 
-void drawEllipse(int x, int y, boolean filled)
+void drawEllipse(int a, int b, boolean filled)
 {
   if(filled)
   {
@@ -279,7 +279,7 @@ void drawEllipse(int x, int y, boolean filled)
   }
   stroke(128);
   strokeWeight(5);
-  ellipse(x, y, 50, 50);
+  ellipse(a, b, 50, 50);
 }
 
 void keyPressed()
@@ -414,7 +414,7 @@ float myfunc(float val)
 
 - How to take existing code and rewrite it with one or more functions (like Lab 5).
 - How to write a `void` function that has no arguments.
-- How to write a `void` function that has some arguments (of any time, perhaps an array).
+- How to write a `void` function that has some arguments (of any type, perhaps an array).
 - How to write a non-void function that has some arguments.
 - How to write these standard functions:
   - `min`, `max` of two numbers
