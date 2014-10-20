@@ -30,7 +30,7 @@ We can also make our own functions. This is useful when we want to collect some 
 
 ## Two kinds of functions
 
-There are really two kinds of functions: those that are `void` functions, and those that "return" values. The kind that return values cannot be `void`, they must have a type like `double` or `boolean` or whatever.
+There are really two kinds of functions: those that are `void` functions, and those that "return" values. The kind that return values cannot be `void`, they must have a type like `float` or `boolean` or whatever.
 
 Void functions look like this:
 
@@ -62,14 +62,14 @@ void setup()
 
 void draw()
 {
-  double r = calculateSomething(); // call the function below
+  float r = calculateSomething(); // call the function below
   ellipse(200, 200, r, r);
 }
 
-double calculateSomething()
+float calculateSomething()
 {
-  // this is a "double" type function,
-  // so it must "return" a value with type double
+  // this is a "float" type function,
+  // so it must "return" a value with type float
 
   // yes, this function is useless, but below we look
   // at better examples
@@ -110,8 +110,8 @@ void drawEllipse(int x, int y, int width, int height, int sw)
 Here is a function, with arguments, that calculates something:
 
 {% highlight java %}
-double px = 200;
-double py = 200;
+float px = 200;
+float py = 200;
 
 void setup()
 {
@@ -126,7 +126,7 @@ void draw()
   py = moveUp(y, 4.3); // speed is 4.3, I suppose
 }
 
-double moveUp(double y, double speed)
+float moveUp(float y, float speed)
 {
   y += speed;
   if(y < 0)
@@ -290,3 +290,139 @@ void keyPressed()
   }
 }
 {% endhighlight %}
+
+## An example with arrays
+
+{% highlight java %}
+void setup()
+{
+  float[] vals = generate_random_vals(100);
+  float sum_of_vals = sum_array(vals);
+  println(sum_of_vals);
+}
+
+// return an array
+float[] generate_random_vals(int count)
+{
+  float[] arr = new float[count];
+  for(int i = 0; i < count; i++)
+  {
+    arr[i] = random(0, 100);
+  }
+  return arr;
+}
+
+// use an array for the argument
+float sum_array(float[] xs)
+{
+  float s = 0.0;
+  for(int i = 0; i < xs.length; i++)
+  {
+    s = s + xs[i];
+  }
+  return s;
+}
+{% endhighlight %}
+
+## Some rules about functions
+
+### Functions must be defined "outside" all other functions
+
+BAD:
+
+{% highlight java %}
+void setup()
+{
+  void myfunc()
+  {
+    // ...
+  }
+}
+{% endhighlight %}
+
+GOOD:
+
+{% highlight java %}
+void setup()
+{
+  // ...
+}
+
+void myfunc()
+{
+  // ...
+}
+{% endhighlight %}
+
+### Functions can only use "global" variables and argument variables
+
+In this example, the variables `x` and `y` are accessible to the function, but `g` is not.
+
+{% highlight java %}
+int x = 5;
+
+void setup()
+{
+  int g = 2;
+  myfunc(77);
+}
+
+void myfunc(int y)
+{
+  // can access x and y, but not g
+}
+{% endhighlight %}
+
+### Function arguments can have any name; only the function cares about this name
+
+{% highlight java %}
+void setup()
+{
+  // setup calls this 'x', but it's called 'w' in the function
+  int x = 77;
+  myfunc(x);
+}
+
+void myfunc(int w)
+{
+  // function calls its argument 'w';
+  // this name does not have to match the code that calls the function
+
+  ellipse(w, w, 50, 50);
+}
+{% endhighlight %}
+
+### Functions return values, not variables; the caller can name the return value whatever it wants
+
+{% highlight java %}
+void setup()
+{
+  // save the return value of the function as 'foo'
+  float foo = myfunc(1.25);
+}
+
+float myfunc(float val)
+{
+  float tmp = 52 * sin(cos(val)) + 10;
+
+  // here, the value is returned, not the variable name
+  return tmp;
+}
+{% endhighlight %}
+
+## What you need to know for Test 3
+
+- How to take existing code and rewrite it with one or more functions (like Lab 5).
+- How to write a `void` function that has no arguments.
+- How to write a `void` function that has some arguments (of any time, perhaps an array).
+- How to write a non-void function that has some arguments.
+- How to write these standard functions:
+  - `min`, `max` of two numbers
+  - `dist`, i.e., the distance function (I'll tell you the math involved)
+  - `abs`, i.e., absolute value of a number
+  - `constrain`, i.e., constrain a number between two bounds
+  - `min` of an array
+  - `max` of an array
+  - `sum` of an array
+  - `printArray` to print an array
+
