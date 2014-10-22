@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 5
-due: Oct 21, 11:59pm
+due: Oct 22, 11:59pm
 ---
 
 # Lab 5
