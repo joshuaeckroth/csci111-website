@@ -23,9 +23,24 @@ void draw()
 {
   background(0);
   iv.draw();
+
+  if (keyPressed)
+  {
+    if (key == CODED)
+    {
+      if (keyCode == LEFT)
+      {
+        iv.rotateLeft();
+      }
+      if (keyCode == RIGHT)
+      {
+        iv.rotateRight();
+      }
+    }
+  }
 }
 
-// mouseWheel also works for two-finger touchpad gestures
+// mouseWheel movements include two-finger gestures on touchpads
 void mouseWheel(MouseEvent event)
 {
   float e = event.getCount();
@@ -39,7 +54,7 @@ void mouseDragged()
 
 void keyPressed()
 {
-  if(key == 'r')
+  if (key == 'r')
   {
     iv.reset();
   }
