@@ -6,7 +6,14 @@ due: Nov 19, 11:59pm
 
 # Lab 7
 
+**(Yes, this lab is due the same day as Lab 8.)**
+
 Make an `ImageViewer` class that works as shown in this video:
+
+<div style="text-align: center">
+<iframe src="http://player.vimeo.com/video/111630688?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="600" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
 
 Use this main file. Do not modify it! (You can change the `size()` command if you want.) Create the class on your own. The class must work with this main file.
 
