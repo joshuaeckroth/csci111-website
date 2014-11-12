@@ -6,8 +6,6 @@ due: Nov 19, 11:59pm
 
 # Lab 7
 
-**(Yes, this lab is due the same day as Lab 8.)**
-
 Make an `ImageViewer` class that works as shown in this video:
 
 <div style="text-align: center">

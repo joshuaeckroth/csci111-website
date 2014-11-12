@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Lab 8
-due: Nov 19, 11:59pm
+due: Nov 24, 11:59pm
 ---
 
 # Lab 8
-
-**(Yes, this lab is due the same day as Lab 7.)**
 
 Write four functions. You are only allowed to use `rect()` once in each function, and it must appear like this:
 
