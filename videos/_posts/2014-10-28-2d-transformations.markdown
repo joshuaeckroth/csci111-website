@@ -76,3 +76,49 @@ void keyPressed()
   }
 }
 {% endhighlight %}
+
+## Horizontal scrolling example
+
+{% highlight java %}
+int px = 400;
+int tx = 0;
+
+void setup()
+{
+  size(800, 600);
+  textSize(10);
+}
+
+void draw()
+{
+  background(255);
+  fill(0);
+
+  translate(-tx, 0);
+  for(int i = 0; i < 2000; i += 50)
+  {
+    text(i, i, 50);
+  }
+  ellipse(px, 400, 50, 50);
+
+  if(keyPressed && key == 'a')
+  {
+    px -= 5;
+    if(px >= width/2 && px <= 2000 - width/2)
+    {
+      tx -= 5;
+    }
+  }
+  if(keyPressed && key == 'd')
+  {
+    px += 5;
+    if(px >= width/2 && px <= 2000 - width/2)
+    {
+      tx += 5;
+    }
+  }
+  px = constrain(px, 0, 2000);
+  tx = constrain(tx, 0, 2000-width);
+
+}
+{% endhighlight %}
