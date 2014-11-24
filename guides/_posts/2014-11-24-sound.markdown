@@ -13,7 +13,7 @@ title: Sound, Music, Speech
 
 ## Libraries
 
-- Install Minim for sound and music (unzip [this file](http://code.compartmental.net/minim/distro/minim-2.2.0.zip) into your `Processing/libraries` folder).
+- Minim can play sound effects and music, and already comes with Processing.
   - Check out Minim's great [documentation](http://code.compartmental.net/minim/) -- click entries on the right menu to see examples.
 - Install ttslib (from Processing's "Add Library" feature) for speech
 
