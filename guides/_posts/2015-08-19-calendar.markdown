@@ -1,0 +1,25 @@
+---
+layout: post
+title: Calendar
+---
+
+# Calendar
+
+- Week 0-1 (8/21-8/28): shapes, color, animation
+- Week 2 (8/31-9/4): conditional statements
+- Week 3 (9/9-9/11): keyboard input, mouse input
+- Week 4 (9/14-9/18): test 1 (Wed, 9/16)
+- Week 5 (9/21-9/25): for() loops
+- Week 6 (9/28-10/2): graphics
+- Week 7 (10/5-10/7): arrays, sprites
+- Week 8 (10/12-10/16): test 2 (Wed, 10/14)
+- Week 9 (10/19-10/21): functions; **no class 10/23**
+- Week 10 (10/28-10/30): **no class 10/26**; functions
+- Week 11 (11/2-11/6): object-orientation
+- Week 12 (11/9-11/13): test 3 (Wed, 11/11)
+- Week 13 (11/16-11/20): 2D transformations
+- Week 14 (11/23-11/25): physics, game design
+- Week 15 (11/30-12/4): music/sound, other random topics
+- Finals week: project presentations
+
+Final exam: Mon, Dec 7, 9-11a

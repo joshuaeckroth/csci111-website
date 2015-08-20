@@ -5,31 +5,19 @@ title: Syllabus
 
 # Syllabus
 
-<p>
-<b>CSCI 111Q - 02, Fall 2014 &mdash; Introduction to Computing</b><br/>
-<b>CSCI 111Q - 03, Fall 2014 &mdash; Introduction to Computing</b>
-</p>
+CSCI 111Q - 02, Fall 2015 &mdash; Introduction to Computing
 
-By the end of this class, you should be able to:
+Work hard in this class and you should be able to:
 
-  - Write interactive media-rich programs using the Processing
-    language.
+- **Write interactive media-rich programs using the Processing language.**
   
-  - Learn a new programming language by utilizing internet resources.
-    
-The first goal should be unsurprising. The second goal ensures you can
-efficiently learn a new technical skill. You may forget how to program
-in Processing, but hopefully you do not forget how to search the web
-about techincal questions and understand (often inadequate)
-documentation.
-
 ## About me
 
 - Joshua Eckroth, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu)
 
 - Eliz Hall 214-9, 386-740-2519
 
-- Office hours: Mon 10-11am; Tue 12-1pm; Wed 11am-12pm; Thur 12-1pm
+- Office hours: Mon: 12-1:30, Wed: 12-1:30 & 2:30-3:30, Fri 11-12
 
 ## Labs
 
@@ -46,17 +34,15 @@ me you have done so, because I may not see it otherwise.
 
 ## Tests
 
-We have three short tests. We have no "final exam." The tests are
-hand-written, so you don't use a computer. You won't be asked to write
-programs.
+We have three short tests. We have no "final exam," instead we have a final project. The tests are written and submitted on a computer.
 
 Test dates:
 
-- Test 1: September 15
+- Test 1: Wed, 9/16
 
-- Test 2: October 13
+- Test 2: Wed, 10/14
 
-- Test 3: November 10
+- Test 3: Wed, 11/11
 
 ## Group projects
 
@@ -95,7 +81,7 @@ I am strongly in agreement with the
 [Stetson University Honor Code](http://www.stetson.edu/other/honor-system/). Any
 form of cheating is not acceptable, will not be tolerated, and could
 lead to dismissal from the University. This includes plagiarism of any
-sort on quizzes, exams, or on projects. So please, do not cheat!
+sort on quizzes, exams, or on projects.
 
 ## Academic success center
 
