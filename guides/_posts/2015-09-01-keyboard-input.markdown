@@ -446,3 +446,158 @@ void keyPressed()
   }
 }
 {% endhighlight %}
+
+## Pong example
+
+{% highlight java %}
+int yLeft = 300;
+int yRight = 300;
+int ballX = 300;
+int ballY = 200;
+int ballDx = 3;
+int ballDy = 3;
+boolean wPressed = false;
+boolean sPressed = false;
+boolean upPressed = false;
+boolean downPressed = false;
+int leftScore = 0;
+int rightScore = 0;
+
+void setup()
+{
+  size(600, 400);
+  rectMode(CENTER);
+  noStroke();
+}
+
+void draw()
+{
+  background(0);
+  fill(255);
+  // draw ball
+  ellipse(ballX, ballY, 30, 30);
+  // draw left paddle
+  rect(50, yLeft, 5, 70);
+  // draw right paddle
+  rect(width-50, yRight, 5, 70);
+  
+  // draw scores
+  textSize(32);
+  fill(250);
+  text(leftScore, 200, 50);
+  text(rightScore, 400, 50);
+  
+  // update ball position
+  ballX += ballDx;
+  ballY += ballDy;
+  
+  if(ballY > (height-15) || ballY < 15)
+  {
+    ballDy = -ballDy;
+  }
+  if(ballX < 0) // right player scores
+  {
+    rightScore++;
+    ballX = 300;
+    ballY = 200;
+    ballDx = (int)random(-5, 5);
+    ballDy = (int)random(-5, 5);
+    if(ballDx == 0)
+    {
+      ballDx = 3;
+    }
+    if(ballDy == 0)
+    {
+      ballDy = 3;
+    }
+  }
+  if(ballX > width) // left player scores
+  {
+    leftScore++;
+    ballX = 300;
+    ballY = 200;
+    ballDx = (int)random(-5, 5);
+    ballDy = (int)random(-5, 5);
+    if(ballDx == 0)
+    {
+      ballDx = 3;
+    }
+    if(ballDy == 0)
+    {
+      ballDy = 3;
+    }
+  }
+  
+  // bounce ball off paddles
+  if(get(ballX - 18, ballY) == color(255))
+  {
+    // hit on the left
+    ballDx--;
+    ballDx = -ballDx;
+  }
+  if(get(ballX + 18, ballY) == color(255))
+  {
+    // hit on the right
+    ballDx++;
+    ballDx = -ballDx;
+  }
+  
+  // update left paddle position
+  if(wPressed)
+  {
+    yLeft -= 5;
+  }
+  if(sPressed)
+  {
+    yLeft += 5;
+  }
+  if(upPressed)
+  {
+    yRight -= 5;
+  }
+  if(downPressed)
+  {
+    yRight += 5;
+  }
+}
+
+void keyPressed()
+{
+  if(key == 'w')
+  {
+    wPressed = true;
+  }
+  if(key == 's')
+  {
+    sPressed = true;
+  }
+  if(key == CODED && keyCode == UP)
+  {
+    upPressed = true;
+  }
+  if(key == CODED && keyCode == DOWN)
+  {
+    downPressed = true;
+  }
+}
+
+void keyReleased()
+{
+  if(key == 'w')
+  {
+    wPressed = false;
+  }
+  if(key == 's')
+  {
+    sPressed = false;
+  }
+  if(key == CODED && keyCode == UP)
+  {
+    upPressed = false;
+  }
+  if(key == CODED && keyCode == DOWN)
+  {
+    downPressed = false;
+  }
+}
+{% endhighlight %}
