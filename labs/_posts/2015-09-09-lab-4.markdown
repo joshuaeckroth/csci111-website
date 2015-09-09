@@ -4,7 +4,7 @@ title: Lab 4
 due: Mon, Sep 14, 11:59pm
 ---
 
-# Lab 3
+# Lab 4
 
 This lab is preparation for Test 1. You will take the test on a computer, and submit on Blackboard. You may see questions like these, and/or you may be asked to write simple programs.
 
