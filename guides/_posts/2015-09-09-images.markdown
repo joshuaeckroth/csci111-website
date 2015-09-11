@@ -94,6 +94,74 @@ void keyPressed()
 }
 {% endhighlight %}
 
+## Banana fire throwing example
+
+{% highlight java %}
+PImage bg;
+PImage banana;
+PImage fire;
+boolean fireActive = false;
+int bx = 200;
+int by = 200;
+float fxDelta;
+float fyDelta;
+float fxOrig;
+float fyOrig;
+
+void setup()
+{
+  size(800, 537);
+  imageMode(CENTER);
+  bg = loadImage("meadow.jpg");
+  banana = loadImage("dancing-banana.gif");
+  fire = loadImage("fire.png");
+}
+
+void draw()
+{
+  background(bg);
+  image(banana, bx, by);
+  if(fireActive)
+  {
+    image(fire, fxOrig + fxDelta, fyOrig + fyDelta);
+    fyDelta = 0.002*(fxDelta*fxDelta);
+    fxDelta += 6;
+  }
+  if(fxOrig + fxDelta > width || fyOrig + fyDelta > height)
+  {
+    fireActive = false;
+  }
+  
+  if(keyPressed)
+  {
+    if(key == ' ' && !fireActive)
+    {
+      fireActive = true;
+      fxOrig = bx+100;
+      fyOrig = by-100;
+      fxDelta = -100;
+      fyDelta = 20;
+    }
+    if(key == 'w')
+    {
+      by--;
+    }
+    if(key == 's')
+    {
+      by++;
+    }
+    if(key == 'a')
+    {
+      bx--;
+    }
+    if(key == 'd')
+    {
+      bx++;
+    }
+  }
+}
+{% endhighlight %}
+
 {% comment %}
 ## Sprites
 
