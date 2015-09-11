@@ -216,3 +216,66 @@ void keyPressed()
   
 }
 {% endhighlight %}
+
+## Checking correct sequence of inputs
+
+{% highlight java %}
+String answer = "";
+String guess = "";
+
+void setup()
+{
+  size(800, 600);
+  textSize(32);
+  frameRate(4);
+}
+
+void draw()
+{
+  if (answer.length() > 0)
+  {
+    char currentColor = answer.charAt(frameCount % answer.length());
+    if (currentColor == '1')
+    {
+      background(255, 0, 0);
+    }
+    if (currentColor == '2')
+    {
+      background(0, 255, 0);
+    }
+    if (currentColor == '3')
+    {
+      background(0, 0, 255);
+    }
+    if (currentColor == '4')
+    {
+      background(255, 255, 0);
+    }
+  }
+  else
+  {
+    background(0);
+  }
+  if (answer.equals(guess))
+  {
+    text("Correct!", 200, 200);
+  }
+  text("Answer: " + answer, 200, 100);
+  text("Guess: " + guess, 200, 150);
+}
+
+void keyPressed()
+{
+  if (key == ' ')
+  {
+    answer = "" + char(int(random(49, 53))) +
+      char(int(random(49, 53))) +
+      char(int(random(49, 53))) +
+      char(int(random(49, 53)));
+    guess = "";
+  } else if (key == '1' || key == '2' || key == '3' || key == '4')
+  {
+    guess = guess + key;
+  }
+}
+{% endhighlight %}
