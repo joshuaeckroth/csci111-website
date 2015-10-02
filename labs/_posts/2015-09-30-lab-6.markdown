@@ -17,10 +17,8 @@ Create a program that uses arrays and `for` loops.
 You are required to have:
 
 - at least one array
-- at least two `for` loops: one in `setup()` and one in `draw()`; you
-  can have more, of course
-- at least some of the values in the arrays must change over
-  time
+- at least one `for` loop
+- at least some of the values in the arrays must change over time
   
 **You must implement one of the following ideas or, if you have your own idea, talk to me so I can "approve" it.**
 
