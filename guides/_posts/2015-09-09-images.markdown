@@ -162,7 +162,6 @@ void draw()
 }
 {% endhighlight %}
 
-{% comment %}
 ## Sprites
 
 Graphics: [http://opengameart.org/content/platformer-art-deluxe](http://opengameart.org/content/platformer-art-deluxe)
@@ -268,5 +267,3 @@ void draw()
   }
 }
 {% endhighlight %}
-
-{% endcomment %}
