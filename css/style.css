@@ -161,3 +161,11 @@ blockquote {
     padding-left: 30px;
     font-style: italic;
 }
+
+code {
+    font-weight: bold;
+}
+
+hr {
+    margin: 20px 0;
+}
