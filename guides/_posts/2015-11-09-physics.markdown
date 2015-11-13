@@ -470,3 +470,20 @@ void mouseClicked()
   }
 }
 {% endhighlight %}
+
+### Determine if a blob is touching another body
+
+{% highlight java %}
+import java.util.ArrayList;
+{% endhighlight %}
+
+Elsewhere, like in `draw()`:
+
+{% highlight java %}
+ArrayList<FBody> blobBodies = myBlob.getVertexBodies();
+for(FBody b : blobBodies) {
+  if(b.isTouchingBody(myCircle)) {
+    myBlob.setFill(0);
+  }
+}
+{% endhighlight %}
