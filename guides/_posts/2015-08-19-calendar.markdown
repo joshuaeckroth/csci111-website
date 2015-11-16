@@ -22,4 +22,4 @@ title: Calendar
 - Week 15 (11/30-12/4): review for test 3 (Mon 11/30), test 3 (Wed, 12/2)
 - Finals week: project presentations
 
-Final exam: Mon, Dec 7, 9-11a
+Final project presentation: Mon, Dec 7, 9-11a
