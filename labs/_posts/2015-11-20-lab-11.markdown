@@ -10,6 +10,6 @@ Using the [fisica library](/guides/2015-11-09-physics.html), create a vehicle wi
 
 - **You must apply a torque on LEFT/RIGHT keypress, not `setPosition` or `setVelocity` or anything like that.** We're simulating a vehicle here!
 
-- Note: eventually, I'll give you hints about how to set up the various circles, boxes, and springs (distance joints).
+- **You must also make it look like a car (with images).**
 
 **Extra credit**: create a dancing flower pot or other dancing character. It should gyrate without any interaction (except possibly an initial force).
