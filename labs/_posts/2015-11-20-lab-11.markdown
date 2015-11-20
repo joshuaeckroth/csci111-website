@@ -1,0 +1,15 @@
+---
+layout: post
+title: Lab 11
+due: Nov 30, 11:59pm
+---
+
+# Lab 11
+
+Using the [fisica library](/guides/2015-11-09-physics.html), create a vehicle with wheels. Support some key presses, including at least LEFT and RIGHT, which make the vehicle move left and right. Create a ground on which to drive; the more interesting the better! (Can you create some jumps or loops?)
+
+- **You must apply a torque on LEFT/RIGHT keypress, not `setPosition` or `setVelocity` or anything like that.** We're simulating a vehicle here!
+
+- Note: eventually, I'll give you hints about how to set up the various circles, boxes, and springs (distance joints).
+
+
