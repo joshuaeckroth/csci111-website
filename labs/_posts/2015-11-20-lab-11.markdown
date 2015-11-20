@@ -13,5 +13,3 @@ Using the [fisica library](/guides/2015-11-09-physics.html), create a vehicle wi
 - Note: eventually, I'll give you hints about how to set up the various circles, boxes, and springs (distance joints).
 
 **Extra credit**: create a dancing flower pot or other dancing character. It should gyrate without any interaction (except possibly an initial force).
-
-
