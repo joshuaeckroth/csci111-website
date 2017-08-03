@@ -5,4 +5,5 @@ gems:
   - jekyll-sitemap
 highlighter: rouge
 permalink: /:categories/:year-:month-:day-:title.html
+future: true
 

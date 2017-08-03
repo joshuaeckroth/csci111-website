@@ -5,7 +5,7 @@ title: Syllabus
 
 # Syllabus
 
-CSCI 111Q - 02, Fall 2015 &mdash; Introduction to Computing
+CSCI 111Q - 31, Fall 2017 &mdash; Introduction to Computing
 
 Work hard in this class and you should be able to:
 
@@ -15,9 +15,9 @@ Work hard in this class and you should be able to:
 
 - Joshua Eckroth, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu)
 
-- Eliz Hall 214-9, 386-740-2519
+- Eliz Hall 214, 386-740-2519
 
-- Office hours: Mon: 12-1:30, Wed: 12-1:30 & 2:30-3:30, Fri 11-12
+- Office hours: TBD
 
 ## Labs
 
@@ -27,10 +27,9 @@ programming assignment.
 Submit your lab by adding your ZIP file to Blackboard. Due dates are
 listed on the home page of this site.
 
-Late work is penalized. Your maximum possible score on late work is
-60/100. You can turn it in at any time (until the last day of
-class). Submit late work to Blackboard, and send me an email telling
-me you have done so, because I may not see it otherwise.
+Late work is penalized 20% for each day that it is late. Submissions
+more than 3 days late receive no credit. Submit late work to Blackboard, and send me an email telling
+me you have done so, because I may not see it otherwise. Tests cannot be made up unless a doctor's note is provided.
 
 ## Tests
 
@@ -38,11 +37,11 @@ We have three short tests. We have no "final exam," instead we have a final proj
 
 Test dates:
 
-- Test 1: Wed, 9/16
+- Test 1: Thur, 9/14
 
-- Test 2: Wed, 10/14
+- Test 2: Thur, 10/19
 
-- Test 3: Wed, 11/11
+- Test 3: Thur, 12/7
 
 ## Group projects
 
@@ -57,13 +56,33 @@ presentations for the second, larger project.
 ## Grading
 
 <table>
-<tr><td>Labs</td><td>30%</td></tr>
+<tr><td>Labs</td><td>40%</td></tr>
 <tr><td>Test 1</td><td>10%</td></tr>
 <tr><td>Test 2</td><td>10%</td></tr>
 <tr><td>Test 3</td><td>10%</td></tr>
-<tr><td>Group project 1</td><td>15%</td></tr>
-<tr><td>Group project 2</td><td>25%</td></tr>
+<tr><td>Group project 1</td><td>10%</td></tr>
+<tr><td>Group project 2</td><td>20%</td></tr>
 </table>
+
+## Calendar
+
+- Week 0: Shapes, color
+- Week 1: Animation, conditional statements
+- Week 2: Keyboard and mouse input
+- Week 3: Review and Test 1
+- Week 4: Game design, group project 1
+- Week 5: Loops
+- Week 6: Arrays
+- Week 7: Graphics, sprites
+- Week 8: Review and Test 2
+- Week 9: Functions
+- Week 10: Object-oriented programming
+- Week 11: Physics
+- Week 12: Physics
+- Week 13: 2D transformations
+- Week 14: 2D transformations
+- Week 15: Review and Test 3
+- Final exam (Thur Dec 14, 7:15-9:00pm): Present group project 2
 
 ## Honor code
 
@@ -97,3 +116,4 @@ Success Center will plan how best to coordinate accommodations. The
 Academic Success Center is located at 209 E Bert Fish Drive, and can
 be contacted using the email address
 [asc@stetson.edu](mailto:asc@stetson.edu).
+
