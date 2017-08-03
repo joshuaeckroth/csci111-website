@@ -1,7 +1,8 @@
-safe: true
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
-highlighter: pygments
+kramdown:
+   input: GFM
+   hard_wrap: false
+gems:
+  - jekyll-sitemap
+highlighter: rouge
 permalink: /:categories/:year-:month-:day-:title.html
 
