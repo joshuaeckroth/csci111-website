@@ -10,10 +10,12 @@ CSCI 111Q - 31, Fall 2017 &mdash; Introduction to Computing
 Work hard in this class and you should be able to:
 
 - **Write interactive media-rich programs using the Processing language.**
+
+This class satisfies the "Q" Quantitative Reasoning General Learning Outcome: "Students can apply quantitative techniques to solve problems or analyze data, or can apply mathematical or symbolic reasoning to move from a set of assumptions to a conclusion."
   
 ## About me
 
-- Joshua Eckroth, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu)
+- Joshua Eckroth, Assistant Professor of Computer Science, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu), [homepage](http://www2.stetson.edu/~jeckroth/)
 
 - Eliz Hall 214, 386-740-2519
 
@@ -63,6 +65,8 @@ presentations for the second, larger project.
 <tr><td>Group project 1</td><td>10%</td></tr>
 <tr><td>Group project 2</td><td>20%</td></tr>
 </table>
+
+The grading scale will follow the typical A = 93-100, A- = 90-92, B+ = 87-89, etc.
 
 ## Calendar
 
