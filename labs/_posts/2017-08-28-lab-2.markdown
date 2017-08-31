@@ -7,7 +7,7 @@ due: Tue, Sep 5, 11:59pm
 # Lab 2
 
 Watch videos about [animation](/videos/2017-08-24-animation.html)
-and [conditionals](/videos/2017-08-28-conditionals.html).
+and [conditionals](/videos/2017-08-29-conditionals.html).
 
 Create a program that "rains cats and dogs." In other words, draw some
 shapes that look like cats, and some that look like dogs, and animate
