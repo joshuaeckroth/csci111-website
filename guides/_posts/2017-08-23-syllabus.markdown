@@ -39,7 +39,7 @@ We have three short tests. We have no "final exam," instead we have a final proj
 
 Test dates:
 
-- Test 1: Thur, 9/14
+- Test 1: Thur, 9/28
 
 - Test 2: Thur, 10/19
 
@@ -73,9 +73,9 @@ The grading scale will follow the typical A = 93-100, A- = 90-92, B+ = 87-89, et
 - Week 0: Shapes, color
 - Week 1: Animation, conditional statements
 - Week 2: Keyboard and mouse input
-- Week 3: Review and Test 1
-- Week 4: Game design, group project 1
-- Week 5: Loops
+- Week 3: Hurricane
+- Week 4: Loops
+- Week 5: Review and test 1, group project 1
 - Week 6: Arrays
 - Week 7: Graphics, sprites
 - Week 8: Review and Test 2
