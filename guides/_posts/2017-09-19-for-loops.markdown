@@ -11,6 +11,70 @@ title: "for() loops"
 
 ## Code from class
 
+
+Grid lines:
+
+{% highlight java %}
+void setup()
+{
+  size(800, 600);
+}
+
+void draw()
+{
+  background(255);
+
+  // loop horizontally for the vertical lines
+  for(int x = 0; x <= width; x = x + 10)
+  {
+    line(x, height, x, 0);
+  }
+
+  // loop vertically for the horizontal lines
+  for(int y = 0; y <= height; y = y + 10)
+  {
+    line(0, y, width, y);
+  }
+
+}
+{% endhighlight %}
+
+Circles:
+
+{% highlight java %}
+float tinyangle = 0;
+float dist = 0;
+int distdelta = 5;
+
+void setup()
+{
+  size(800, 600);
+}
+
+void draw()
+{
+  background(0);
+  for(float angle = 0; angle <= TWO_PI; angle = angle + PI/8)
+  {
+    fill(random(0, 255), random(0, 255), random(0, 255));
+    float x = dist*cos(angle + tinyangle) + width/2;
+    float y = dist*sin(angle + tinyangle) + height/2;
+    float size = dist/3;
+    ellipse(x, y, size, size);
+  }
+  tinyangle += 0.05;
+  dist += distdelta;
+  if(dist > 500) {
+    distdelta = -5;
+  }
+  if(dist < 0) {
+    distdelta = 5;
+  }
+}
+{% endhighlight %}
+
+Other stuff:
+
 {% highlight java %}
 float offset = 0.0;
 
