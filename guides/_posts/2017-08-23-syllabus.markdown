@@ -86,7 +86,7 @@ The grading scale will follow the typical A = 93-100, A- = 90-92, B+ = 87-89, et
 - Week 13: 2D transformations
 - Week 14: 2D transformations
 - Week 15: Review and Test 3
-- Final exam (Thur Dec 14, 7:15-9:00pm): Present group project 2
+- Week 16: Work on group project 2, present on Thursday
 
 ## Honor code
 
