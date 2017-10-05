@@ -13,7 +13,7 @@ You are required to make a simple game, with the following elements:
 - a goal
 - keyboard and/or mouse control
 - a way to lose
-- a way to restar the game
+- a way to restart the game
 - images
 - at least somewhat visually appealing
 
