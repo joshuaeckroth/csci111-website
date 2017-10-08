@@ -25,7 +25,131 @@ Read,
 **Note**: your image files must be in a folder called "data" in your
 sketch folder.
 
-## Example
+## Fish and Diver example
+
+<div style="text-align: center; margin: 10px;">
+<img src="/images/fish-and-diver.png" />
+</div>
+
+{% highlight java %}
+
+// prepare image variables
+PImage bg;
+PImage diver;
+PImage fish1;
+PImage fish2;
+PImage bubble;
+
+// fx1, fy1, fx2, fy2 are fish positions
+float fx1, fx2, fy1, fy2;
+// dfx1, dfx2 are fish horizontal speeds
+float dfx1 = -3;
+float dfx2 = 3;
+// bx1, by1, bx2, by2, bx3, by3 are bubble positions
+float bx1, by1, bx2, by2, bx3, by3;
+// dx, dy is diver position
+float dx = 400;
+float dy = 300;
+
+void setup()
+{
+  // make window size same as background image size
+  size(1024,685);
+  
+  // load images
+  bg = loadImage("bg.jpg");
+  diver = loadImage("diver.png");
+  fish1 = loadImage("fish1.png");
+  fish2 = loadImage("fish2.png");
+  bubble = loadImage("bubble.png");
+  imageMode(CENTER);
+  fx1 = 100;
+  fx2 = 400;
+  fy1 = 300;
+  fy2 = 400;
+  bx1 = 400;
+  by1 = 200;
+  bx2 = 390;
+  by2 = 175;
+  bx3 = 410;
+  by3 = 150;
+}
+
+void draw()
+{
+  // draw background
+  image(bg, width/2, height/2);
+  
+  // draw diver
+  image(diver, dx, dy, diver.width * 0.25, diver.height * 0.25);
+  
+  // draw bubbles (somewhat transparent with tint())
+  tint(255, 255, 255, 200);
+  image(bubble, bx1, by1, bubble.width * 0.005, bubble.height * 0.005);
+  image(bubble, bx2, by2, bubble.width * 0.005, bubble.height * 0.005);
+  image(bubble, bx3, by3, bubble.width * 0.005, bubble.height * 0.005);
+  
+  // draw fish
+  noTint();
+  image(fish1, fx1, fy1, fish1.width * 0.1, fish1.height * 0.1);
+  image(fish2, fx2, fy2, fish2.width * 0.1, fish2.height * 0.1);
+  
+  // move fish1 horizontally
+  fx1 += dfx1;
+  // if fish1 went off screen, restart at a random y-position and speed
+  if(fx1 < -100) {
+    fx1 = width+100;
+    fy1 = random(100, height-100);
+    dfx1 = random(-5, -1);
+  }
+  
+  // move fish2 horizontally
+  fx2 += dfx2;
+  // if fish2 went off screen, restart at a random y-position and speed
+  if(fx2 > width+100) {
+    fx2 = -100;
+    fy2 = random(100, height-100);
+    dfx2 = random(1, 5);
+  }
+  
+  // move bubbles
+  bx1 += random(-1, 1);
+  by1 -= 0.5;
+  bx2 += random(-1, 1);
+  by2 -= 0.5;
+  bx3 += random(-1, 1);
+  by3 -= 0.5;
+  
+  // when bubbles are too far offscreen, restart bubbles at diver position
+  if(by3 < -200) {
+    bx1 = dx;
+    by1 = dy-100;
+    bx2 = dx-10;
+    by2 = dy-125;
+    bx3 = dx+10;
+    by3 = dy-150;
+  }
+}
+
+// move diver
+void keyPressed()
+{
+  if(key == CODED && keyCode == UP) {
+    dy -= 5;
+  }
+  if(key == CODED && keyCode == DOWN) {
+    dy += 5;
+  }
+  if(key == CODED && keyCode == LEFT) {
+    dx -= 5;
+  }
+  if(key == CODED && keyCode == RIGHT) {
+    dx += 5;
+  }
+}
+{% endhighlight %}
+
+## Spaceship example
 
 <div style="text-align: center; margin: 10px;">
 <img src="/images/images-example.png" />
