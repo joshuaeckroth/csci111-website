@@ -11,6 +11,28 @@ title: "for() loops"
 
 ## Code from class
 
+Squares:
+
+{% highlight java %}
+void setup()
+{
+  size(605, 605);
+}
+
+void draw()
+{
+  for(int y = 5; y <= 505; y = y + 100)
+  {
+    for(int x = 5; x <= 505; x = x + 100)
+    {
+      for(int beta = 0; beta <= 40; beta = beta + 10)
+      {
+        rect(x+beta,y+beta, 95-2*beta, 95-2*beta);
+      }
+    }
+  }
+}
+{% endhighlight %}
 
 Grid lines:
 
