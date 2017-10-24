@@ -41,7 +41,7 @@ Test dates:
 
 - Test 1: Thur, 9/28
 
-- Test 2: Thur, 10/26
+- Test 2: Thur, 11/2
 
 - Test 3: Thur, 12/7
 
