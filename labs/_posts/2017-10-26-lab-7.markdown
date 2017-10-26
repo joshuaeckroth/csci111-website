@@ -1,0 +1,116 @@
+---
+layout: post
+title: Lab 7
+due: Wed Nov 1, 11:59pm
+---
+
+# Lab 7
+
+This lab is preparation for Test 2. You will take the test on paper. You should expect to see questions like these.
+
+**You may use your computer and the internet during the test (but not communicating with other class members or friends online).**
+
+Write you solutions to these questions in a text file or Word doc or whatever, and submit on Blackboard.
+
+## Loops
+
+1\. Write a `for` loop that draws 100 ellipses (I don't care about the dimensions or locations of the ellipses).
+
+<hr/>
+
+2\. What is the value of `prod` after this loop is finished?
+
+{% highlight java %}
+int prod = 1;
+for(int q = 2; q < 8; q = q + 2)
+{
+  prod *= q;
+}
+{% endhighlight %}
+
+<hr/>
+
+3\. Fill in the following blanks so that the loop sets an integer `k` to the values -10, -8, -6, ..., 6, 8, 10.
+
+{% highlight java %}
+for(______________; ______________; ______________)
+{% endhighlight %}
+
+<hr/>
+
+4\. Write a `for()` loop that computes the sum of the numbers 500, 495, 490, ..., 10, 5. Save the sum into a variable called `sum`.
+
+## Arrays
+
+5\. Suppose we have an array with 97 values. What is the first array "position" or "index"? What is the last index?
+
+<hr/>
+
+6\. What is the first and last position of this array:
+
+{% highlight java %}
+int[] xyz = new int[100];
+{% endhighlight %}
+
+<hr/>
+
+7\. What code will tell you the number of elements in some arbitrary array called `arr`?
+
+<hr/>
+
+8\. Create an array that can hold 100 decimal values. Don’t put any values in it.
+
+<hr/>
+
+9\. Create an array that can hold symbols from the keyboard. Don’t put any values in it.
+
+<hr/>
+
+10\. Using a loop, print in reverse all elements of the array arr, which holds integers. Don’t create the array.
+
+<hr/>
+
+11\. Create an array of 100 floats and, using two loops, fill the first 50 elements with the number 2.2, and the second 50 elements with the number 9.9.
+
+<hr/>
+
+12\. Suppose we have:
+
+{% highlight java %}
+int j;
+String s;
+float[] ww;
+String[] t;
+float r;
+int[] z;
+{% endhighlight %}
+
+- What type is `s`?
+- What type is `t`?
+- What type is `r`?
+- What type is `t[0]`?
+- What type is `t[j]`?
+- What type is `ww[3]`?
+- What type is `ww`?
+- What type is `ww[j]`?
+- What type is `z`?
+- What type is `ww[z[0]]`?
+- What type is `ww[z[j]]`?
+
+<hr/>
+
+13\. Complete the following code so that the array `copy` is a copy of the array `original`, i.e., it is the same size and all elements have the same values in the same order.
+
+{% highlight java %}
+float[] original = new float[100];
+// original is filled with values (code hidden)...
+
+float[] copy = ______________________________;
+
+for(int j = __________; _____________________; ______________)
+{
+    __________________________________________;
+}
+{% endhighlight %}
+
+
