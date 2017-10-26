@@ -17,4 +17,33 @@ to detect that the puzzle was properly assembled. Just allow the user to
 move the pieces around. You must have at least 10 pieces, and you must use
 an array to keep track of their locations.
 
+## Starting code
+
+{% highlight java %}
+PImage img;
+PImage[] pieces = new PImage[16];
+
+void setup()
+{
+  size(1000, 1000);
+  img = loadImage("Jumping-cats22.jpg");
+  for(int i = 0; i < 16; i++)
+  {
+    int w = img.width/4;
+    int h = img.height/4;
+    int x = i%4 * w;
+    int y = i/4 * h;
+    pieces[i] = img.get(x, y, w, h);
+  }
+}
+
+void draw()
+{
+  //background(0);
+  for(int i = 0; i < 16; i++)
+  {
+    image(pieces[i], random(width), random(height));
+  }
+}
+{% endhighlight %}
 
