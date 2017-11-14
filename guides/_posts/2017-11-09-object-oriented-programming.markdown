@@ -200,3 +200,97 @@ void keyPressed()
   player.handleKeyPress();
 }
 {% endhighlight %}
+
+## Boxes example
+
+Main file:
+
+{% highlight java %}
+Box b = new Box();
+Box b2 = new Box(400, 400, 10, 100);
+
+void setup()
+{
+  size(800, 800);
+  b2.setTravelDistance(10);
+}
+
+void draw()
+{
+  background(0);
+  
+  b.drawBox();
+  b2.drawBox();
+  
+  b.moveBox();
+  b2.moveBox();
+}
+{% endhighlight %}
+
+Box tab:
+
+{% highlight java %}
+class Box
+{
+  int x;
+  int y;
+  int w;
+  int h;
+  int travelDistance;
+  
+  Box()
+  {
+    this.x = int(random(0, 800));
+    this.y = int(random(0, 800));
+    this.w = int(random(50, 200));
+    this.h = int(random(50, 200));
+    this.travelDistance = 2;
+  }
+
+  // create a constructor
+  Box(int x, int y, int w, int h)
+  {
+    this.x = x;  // "x" refers to the input parameter x; "this.x" refers to the field x
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.travelDistance = 2;
+  }
+  
+  void setTravelDistance(int travelDistance)
+  {
+    this.travelDistance = travelDistance;
+  }
+
+  // method for drawing boxes
+  void drawBox()
+  {
+    fill(255);
+    rect(x, y, w, h);  // refer to fields, not any instance names!
+  }
+
+  void moveBox()
+  {
+    if (keyPressed)
+    {
+      if (key == 'w')
+      {
+        y = y - travelDistance;
+      }
+      if (key == 's')
+      {
+        y = y + travelDistance;
+      }
+      if (key == 'a')
+      {
+        x = x - travelDistance;
+      }
+      if (key == 'd')
+      {
+        x = x + travelDistance;
+      }
+    }
+  }
+}
+{% endhighlight %}
+
