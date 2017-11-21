@@ -1,0 +1,59 @@
+---
+layout: post
+title: Lab 9
+due: Thur Nov 30, 11:59pm
+---
+
+# Lab 9
+
+Modify the puzzle solution below to support the following features:
+
+- each piece can be rotated when the right mouse button is held on that piece
+- each piece can be dragged around (as before)
+- the whole screen can be zoomed in/out and moved left/right/up/down with the keyboard
+
+## Puzzle solution
+
+{% highlight java %}
+PImage[] pieces = new PImage[64];
+int[] xs = new int[64];
+int[] ys = new int[64];
+
+void setup()
+{
+  size(1000, 1000);
+  PImage img = loadImage("funny-jumping-cats-121__880.jpg");
+  for(int i = 0; i < pieces.length; i++)
+  {
+    int row = i/8;
+    int col = i%8;
+    pieces[i] = img.get(col*(img.width/8), row*(img.height/8), img.width/8, img.height/8);
+    xs[i] = int(random(width));
+    ys[i] = int(random(height));
+  }
+}
+
+void draw()
+{
+  background(0);
+  for(int i = 0; i < pieces.length; i++)
+  {
+    image(pieces[i], xs[i], ys[i]);
+  }
+}
+
+void mouseDragged()
+{
+  for(int i = 0; i < pieces.length; i++)
+  {
+    if(mouseX >= xs[i] && mouseX <= xs[i]+pieces[i].width &&
+      mouseY >= ys[i] && mouseY <= ys[i]+pieces[i].height)
+    {
+      xs[i] = xs[i] + (mouseX - pmouseX);
+      ys[i] = ys[i] + (mouseY - pmouseY);
+      break;
+    }
+  }
+}
+{% endhighlight %}
+
