@@ -1,0 +1,183 @@
+---
+layout: post
+title: Sound, Music, Speech
+---
+
+## Sources of sounds and music
+
+- [Top 20 Best Free Music and Sound Effect Resources For Games](https://www.makegameswith.us/gamernews/281/top-20-best-free-music-and-sound-effect-resources) -- a good list
+- [freesound](https://www.freesound.org/) -- create a free account
+- [Free Stock Music](http://www.freestockmusic.com/) -- check out their "Cinematic" category in the Free Music menu; also create a free account
+- [50 RPG Sound Effects](http://opengameart.org/content/50-rpg-sound-effects) -- good collection from [OpenGameArt.org](http://opengameart.org/); browse by sound effects or music
+- [SoundBible.com Game Sounds](http://soundbible.com/tags-game.html)
+
+## Libraries
+
+- Minim can play sound effects and music, and already comes with Processing.
+  - Check out Minim's great [documentation](http://code.compartmental.net/minim/) -- click entries on the right menu to see examples.
+- Install ttslib (from Processing's "Add Library" feature) for speech
+
+## Sound
+
+{% highlight java %}
+import ddf.minim.*;
+
+Minim minim;
+AudioSample inception;
+AudioSample laser;
+
+void setup() {
+  minim = new Minim(this);
+
+  inception = minim.loadSample("inception.wav"); // put these in your data folder
+  laser = minim.loadSample("laser.mp3");
+}
+
+void draw() {
+  // ...
+}
+
+void mouseClicked()
+{
+  inception.trigger();
+}
+
+void keyPressed()
+{
+  if(key == ' ')
+  {
+    laser.trigger();
+  }
+}
+{% endhighlight %}
+
+Here is a cool way to draw a waveform:
+
+{% highlight java %}
+void draw() {
+  background(0);
+  strokeWeight(3);
+
+  // use the mix buffer to draw the waveforms.
+  for (int i = 0; i < inception.bufferSize() - 1; i++)
+  {
+    // the map function scales a value originally between two values to stretch out to two other values
+    // see: https://processing.org/reference/map_.html
+
+    float x1 = map(i, 0, inception.bufferSize(), 0, width);
+    float x2 = map(i+1, 0, inception.bufferSize(), 0, width);
+
+    // mix.get(i) gives back a number between -1 and 1
+    stroke(abs(inception.mix.get(i))*200+55);
+    strokeWeight(abs(inception.mix.get(i))*8+2);
+    line(x1, height/2 - inception.mix.get(i)*(height/2), x2, height/2 - inception.mix.get(i+1)*(height/2));
+  }
+}
+{% endhighlight %}
+
+## Music
+
+{% highlight java %}
+import ddf.minim.*;
+
+Minim minim;
+AudioPlayer bgmusic;
+
+void setup() {
+  size(640, 360);
+  background(255);
+
+  minim = new Minim(this);
+
+  bgmusic = minim.loadFile("resistance.mp3");
+  bgmusic.play();
+}
+
+void draw() {
+  // ...
+}
+
+void keyPressed()
+{
+  if(key == 's')
+  {
+    if(bgmusic.isPlaying())
+    {
+      bgmusic.pause();
+    }
+    else
+    {
+      bgmusic.play();
+    }
+  }
+  if(key == 'r')
+  {
+    bgmusic.rewind();
+  }
+}
+{% endhighlight %}
+
+## Speech
+
+{% highlight java %}
+import guru.ttslib.*;
+
+TTS tts;
+
+void setup() {
+  size(100,100);
+  tts = new TTS();
+}
+
+void draw() {
+  // ...
+}
+
+void mousePressed() {
+  tts.speak("I am Megatron. Submit or perish.");
+}
+{% endhighlight %}
+
+Simultaneous speakers, using "threads":
+
+{% highlight java %}
+import guru.ttslib.*;
+
+TTS tts1;
+TTS tts2;
+TTS tts3;
+
+void setup() {
+  tts1 = new TTS();
+  tts2 = new TTS();
+  tts3 = new TTS();
+}
+
+void draw() {
+  // ...
+}
+
+void speakLeft()
+{
+  try
+  {
+    Thread.sleep(300);
+  } catch (Exception e) { }
+  tts1.speakLeft("I am on the left");
+}
+
+void speakRight()
+{
+  try
+  {
+    Thread.sleep(600);
+  } catch (Exception e) { }
+  tts3.speakRight("I am on the right");
+}
+
+void mousePressed() {
+  thread("speakLeft");
+  thread("speakRight");
+  tts2.speak("I am in the center");
+}
+{% endhighlight %}
