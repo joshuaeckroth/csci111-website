@@ -40,3 +40,7 @@ pre, code, tt, code > span {
     color: #999;
 }
 
+blockquote:after {
+    content: "";
+}
+
