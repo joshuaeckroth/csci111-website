@@ -5,11 +5,9 @@ title: Syllabus
 
 # Syllabus
 
-CSCI 111Q - 31, Fall 2017 &mdash; Introduction to Computing
+CSCI 111Q - 02, Spring 2018 &mdash; Introduction to Computing
 
-Work hard in this class and you should be able to:
-
-- **Write interactive media-rich programs using the Processing language.**
+An introduction to computing for non-computer science majors or those who have no previous programming experience. Introduction to elementary computer theory, algorithmic thinking, terminology and software applications in either a robotics or multimedia context.
 
 This class satisfies the "Q" Quantitative Reasoning General Learning Outcome: "Students can apply quantitative techniques to solve problems or analyze data, or can apply mathematical or symbolic reasoning to move from a set of assumptions to a conclusion."
   
@@ -19,31 +17,24 @@ This class satisfies the "Q" Quantitative Reasoning General Learning Outcome: "S
 
 - Eliz Hall 214, 386-740-2519
 
-- Office hours: Mon 1-3, Tue 5:30-6, Wed 2-3, Thur 5:30-6
+- Office hours: TBD
 
 ## Labs
 
-We'll generally have one lab per week. Each lab assignment is a
-programming assignment.
+We'll generally have one lab per week. Each lab assignment is a programming assignment.
 
-Submit your lab by adding your ZIP file to Blackboard. Due dates are
-listed on the home page of this site.
+Submit your lab by adding your ZIP file to Blackboard. Due dates are listed on the home page of this site.
 
-Late work is penalized 20% for each day that it is late. Submissions
-more than 3 days late receive no credit. Submit late work to Blackboard, and send me an email telling
-me you have done so, because I may not see it otherwise. Tests cannot be made up unless a doctor's note is provided.
+Late work is penalized 20% for each day that it is late. Submissions more than 3 days late receive no credit. Submit late work to Blackboard, and send me an email telling me you have done so, because I may not see it otherwise. Tests cannot be made up unless a doctor's note is provided.
 
 ## Tests
 
-We have three short tests. We have no "final exam," instead we have a final project. The tests are written and submitted on a computer.
+We have two short tests. We have no "final exam," instead we have a final project. The tests are written and submitted on paper.
 
 Test dates:
 
-- Test 1: Thur, 9/28
-
-- Test 2: Thur, 11/2
-
-- Test 3: Thur, 12/12
+- Test 1: Wed Feb 14
+- Test 2: Wed Apr 4
 
 ## Group projects
 
@@ -59,9 +50,8 @@ presentations for the second, larger project.
 
 <table>
 <tr><td>Labs</td><td>40%</td></tr>
-<tr><td>Test 1</td><td>10%</td></tr>
-<tr><td>Test 2</td><td>10%</td></tr>
-<tr><td>Test 3</td><td>10%</td></tr>
+<tr><td>Test 1</td><td>15%</td></tr>
+<tr><td>Test 2</td><td>15%</td></tr>
 <tr><td>Group project 1</td><td>10%</td></tr>
 <tr><td>Group project 2</td><td>20%</td></tr>
 </table>
@@ -70,23 +60,23 @@ The grading scale will follow the typical A = 93-100, A- = 90-92, B+ = 87-89, et
 
 ## Calendar
 
-- Week 0: Shapes, color
-- Week 1: Animation, conditional statements
-- Week 2: Keyboard and mouse input
-- Week 3: Hurricane
-- Week 4: Loops
-- Week 5: Review and test 1, group project 1
-- Week 6: Arrays
-- Week 7: Graphics, sprites
-- Week 8: Review and Test 2
-- Week 9: Functions
-- Week 10: Object-oriented programming
-- Week 11: Physics
-- Week 12: Physics
+- Week 1: Shapes, color
+- Week 2: Animation
+- Week 3: Keyboard, mouse input
+- Week 4: Images
+- Week 5: Test 1
+- Week 6: Group project 1
+- Week 7: Functions
+- Week 8: Break (no class)
+- Week 9: Arrays
+- Week 10: Loops
+- Week 11: Classes
+- Week 12: Test 2
 - Week 13: 2D transformations
-- Week 14: 2D transformations
-- Week 15: Review and Test 3
-- Week 16: Work on group project 2, present on Thursday
+- Week 14: Physics
+- Week 15: Group project 2
+- Week 16: Group project 2
+- Final exam period: Sat May 5, 8-10 am (present group project)
 
 ## Honor code
 

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Lab 1
-due: "Tue, Aug 29, 11:59pm"
+due: "Mon, Jan 22, 11:59pm"
 ---
 
 # Lab 1
 
 Read about the
-[coordinate system](/guides/2017-08-24-coordinate-system.html) and
-[color](/guides/2017-08-24-color.html).
+[coordinate system](/guides/2018-01-17-coordinate-system.html) and
+[color](/guides/2018-01-17-color.html).
 
 Your task in this lab is to figure out how to install Processing and
 create a "sketch" (their word for a "program") that draws a well-known
