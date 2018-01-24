@@ -1,0 +1,14 @@
+---
+layout: post
+title: Lab 1
+due: "Wed, Jan 31, 11:59pm"
+---
+
+# Lab 2
+
+Read about
+[animation](/guides/2018-01-22-animation.html) and watch the [video](/videos/2018-01-22-animation.html).
+
+Take your character or image from Lab 1 and animate it in some way. You get to decide how to animate it. You must change the location of one or more shapes, and must change a color.
+
+
