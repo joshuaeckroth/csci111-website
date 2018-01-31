@@ -162,5 +162,80 @@ void mouseDragged()
 {% endhighlight %}
 
 
+# Whack-a-mole game
 
+{% highlight java %}
+int activeMole = 1;
+int score = 0;
 
+void setup()
+{
+  size(700, 600);
+  noCursor();
+}
+
+void draw()
+{
+  if(frameCount % 30 == 0)
+  {
+    activeMole = 1 + int(random(3));
+  }
+  
+  background(#000000);
+  
+  if(activeMole == 1)
+  {
+    ellipse(150, 300, 150, 150);
+  }
+  if(activeMole == 2)
+  {
+    ellipse(350, 300, 150, 150);
+  }
+  if(activeMole == 3)
+  {
+    ellipse(550, 300, 150, 150);
+  }
+  
+  textSize(32);
+  text("Score: " + score, 50, 50);
+  
+  ellipse(mouseX, mouseY, 50, 50);
+}
+
+void mouseClicked()
+{
+  if(dist(mouseX, mouseY, 150, 300) <= 75) {
+    if(activeMole == 1)
+    {
+      score++;
+      activeMole = 1 + int(random(3));
+    }
+    else
+    {
+      exit();
+    }
+  }
+  if(dist(mouseX, mouseY, 350, 300) <= 75) {
+    if(activeMole == 2)
+    {
+      score++;
+      activeMole = 1 + int(random(3));
+    }
+    else
+    {
+      exit();
+    }
+  }
+  if(dist(mouseX, mouseY, 550, 300) <= 75) {
+    if(activeMole == 3)
+    {
+      score++;
+      activeMole = 1 + int(random(3));
+    }
+    else
+    {
+      exit();
+    }
+  }
+}
+{% endhighlight %}
