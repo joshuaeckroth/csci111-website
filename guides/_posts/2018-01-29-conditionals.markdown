@@ -100,3 +100,72 @@ void draw()
   }
 }
 {% endhighlight %}
+
+## Collision detection example
+
+{% highlight java %}
+// missiles and collision detection
+
+// character x & y
+int cx = 400;
+int cy = 500;
+
+// enemy x & y
+int ex = 200;
+int ey = 200;
+
+// missle x & y (starts off screen)
+int mx = -10;
+int my = -10;
+
+void setup()
+{
+  size(800, 600);
+  rectMode(CENTER);
+}
+
+void draw()
+{
+  background(0);
+  // draw character
+  fill(#0000ff);
+  rect(cx, cy, 50, 50);
+
+  // draw enemy
+  fill(#ff0000);
+  ellipse(ex, ey, 100, 100);
+  
+    // collision detection
+  if(get(mx, my) == #ff0000)
+  {
+    println("hit");
+  }
+  
+  // draw missile
+  fill(#ffffff);
+  ellipse(mx, my, 20, 20);
+  
+  // move missile
+  my = my - 5;
+  
+
+}
+
+void keyPressed()
+{
+  if(key == 'f')
+  {
+    mx = cx;
+    my = cy;
+  }
+  if(key == 'a')
+  {
+    cx = cx - 5;
+  }
+  if(key == 'd')
+  {
+    cx = cx + 5;
+  }
+}
+{% endhighlight %}
+
