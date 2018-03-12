@@ -1,0 +1,75 @@
+---
+layout: post
+title: Lab 4
+due: Mon Mar 19, 11:59pm
+---
+
+# Lab 4
+
+Read the [notes](/guides/2018-03-12-for-loops.html) about for() loops.
+
+## Gaudy motel carpets
+
+Your task is to use for() loops and shapes and colors to **recreate
+one of the following textures**. You must recreate it exactly (within
+a few pixels); use the colors specified. You can use a different
+window size, if you want, but make it big enough for the texture to
+repeat a few times.
+
+### Option 1
+
+<div style="text-align: center">
+<img src="/images/texture-1.png" />
+
+<p> Colors: #ab6623, #74340e, #e8a204.<br/>This one has the simplest
+code, but requires some thinking to get the layering correct. </p>
+</div>
+
+### Option 2
+
+<div style="text-align: center">
+<img src="/images/texture-2.png" />
+
+<p> Colors (in RGB+alpha): red = [203, 0, 0, 128], green =
+[86, 102, 35, 220].<br/>The code for this one is simple, conceptually,
+but I found it quite difficult to position the lines correctly. And I
+have no idea why some green lines appear above, and others below the
+red bars. Maybe your solution won't have that problem.</p>
+</div>
+
+### Option 3
+
+<div style="text-align: center">
+<img src="/images/texture-5.png" />
+
+<p>Colors: background = #4e4c4d, gray stroke: #b3b3b3, gray fill:
+#666666, yellow: #fbf9c9.<br/> This code is a straight-forward
+rows/cols double-for()-loop.  Assuming <code>i</code> is the row and
+<code>j</code> is the column, the there is a yellow fill when
+<code>(i+2*j) % 4 == 0</code> and a yellow outline when <code>(2*i+j)
+% 7 == 1</code>. Be sure to use those rules to exactly recreate this
+image.  </p></div>
+
+### Option 4
+
+Recreate this carpet, from *The Shining*:
+
+<div style="text-align: center">
+<img src="/images/the-shining-carpet-2.jpg" />
+</div>
+
+I'll be impressed if you can recreate the more famous carpet.
+
+<div style="text-align: center">
+<img src="/images/the-shining-carpet.jpg" />
+</div>
+
+By famous, I mean, well,
+
+<div style="text-align: center">
+<img src="/images/shining-carpet-cardigan.jpg" />
+</div>
+
+
+
+
