@@ -1,0 +1,20 @@
+---
+layout: post
+title: Lab 5
+due: "Wed Mar 28, 11:59pm"
+---
+
+# Lab 5
+
+Using arrays and images, create a "candy catch" game. This game works as follows:
+
+- There are lots of little candies falling from the top of the screen. You can use a single repeated candy image but there must be 5+ candies on the screen at any time.
+- You control a basket with the mouse or keyboard. Use an image for the basket (or some other catching device).
+- "Catching" a candy means your basket moves to where the candy is, and then the candy disappears.
+- Candies that fall off screen and candies that are caught start back at a random place at the top of the screen.
+- A score, shown at all times, keeps track of how many candies you have caught.
+
+You do not need a start screen, nor do you need to be able to restart, nor do you need a lose condition.
+
+Naturally, use two arrays: one for the x-coordinates of the candies, and one for the y-coordinates.
+
