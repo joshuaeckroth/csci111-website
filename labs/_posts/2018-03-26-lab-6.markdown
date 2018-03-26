@@ -1,0 +1,17 @@
+---
+layout: post
+title: Lab 6
+due: "Wed Apr 4, 11:59pm"
+---
+
+# Lab 6
+
+Using arrays and images and 2D transformations (translate/rotate), create a puzzle game.
+
+- Load multiple images (at least 6), or load one image and cut it into rectangular pieces in your code (we'll look at this in class).
+- Start each image (each puzzle piece) in a random location with a random rotation.
+- Store the image, locations, and rotations in arrays.
+- Allow dragging puzzle pieces around with the left mouse button. Mouse dragging is shown in the [mouse input](/guides/2018-01-29-mouse-input.html) notes, heading "Code for demo 2: dragging/clicking inside a box."
+- Rotate (spin) a piece if the right mouse button is held over the piece.
+- Note, you'll need for() loops to deal with the arrays, and pushMatrix()/popMatrix() to deal with the puzzle piece translations and rotations.
+
