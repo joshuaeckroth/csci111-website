@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 6
-due: "Wed Apr 4, 11:59pm"
+due: "Fri Apr 6, 11:59pm"
 ---
 
 # Lab 6
