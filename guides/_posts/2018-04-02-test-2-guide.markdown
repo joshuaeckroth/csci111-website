@@ -5,5 +5,5 @@ title: Test 2 Guide
 
 # Test 2 Guide
 
-Download the prior semester's test 2 and the solutions we developed in class: [CSCI 111 Test 2 Fall 2017.docx](/zips/CSCI 111 Test 2 Fall 2017.docx).
+Download the prior semester's test 2 and the solutions we developed in class: [CSCI 111 Test 2 - Fall 2017.docx](/zips/CSCI 111 Test 2 Fall - 2017.docx).
 
