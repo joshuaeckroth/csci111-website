@@ -9,6 +9,124 @@ title: "Video: 2D Transformations"
 <iframe src="http://player.vimeo.com/video/78667474?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="600" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
 
+## Planets example
+
+{% highlight java %}
+float planetDistance[] = { // in miles
+  36.0e6, // mercury
+  67.2e6, // venus
+  93.0e6, // earth
+  141.6e6, // mars
+  483.6e6, // jupiter
+  886.7e6, // saturn
+  1784.0e6, // uranus
+  2794.4e6, // neptune
+  3674.5e6 // pluto
+};
+
+float planetDiameter[] = { // in miles
+  3031, // mercury
+  7521, // venus
+  7926, // earth
+  4222, // mars
+  88729, // jupiter
+  74600, // saturn
+  32600, // uranus
+  30200, // neptune
+  1413 // pluto
+};
+
+float planetSunPeriod[] = { // in days
+  87.96, // mercury
+  224.68, // venus
+  365.26, // earth
+  689.98, // mars
+  4329.6, // jupiter
+  10751.4, // saturn
+  30685.5, // uranus
+  60155.7, // neptune
+  90410.5 // pluto
+};
+
+float sunDiameter = 864576; // miles
+
+float milesPerPixel = 20e5;
+
+int day = 0;
+float framesPerDay = 0.5;
+
+int offsetX = 0;
+int offsetY = 0;
+
+void setup()
+{
+  size(1800, 1000);
+  background(0);
+  rectMode(CENTER);
+}
+
+void draw()
+{
+
+  fill(255);
+  
+  translate(offsetX, offsetY);
+  
+  translate(width/2, height/2);
+  
+  ellipse(0, 0, sunDiameter / milesPerPixel, sunDiameter / milesPerPixel);
+  
+  for(int i = 0; i < planetDistance.length; i++)
+  {
+    pushMatrix();
+    rotate(day / (planetSunPeriod[i] * framesPerDay));
+    translate(planetDistance[i] / milesPerPixel, 0);
+    float pdiam = constrain(planetDiameter[i] / milesPerPixel, 5, 500);
+    ellipse(0, 0, pdiam, pdiam);
+    popMatrix();
+  }
+  
+  fill(0, 0, 0, 10);
+  noStroke();
+  rect(0, 0, width, height);
+  
+  day++;
+  
+  if(keyPressed)
+  {
+    if(key == CODED)
+    {
+      if(keyCode == DOWN)
+      {
+          background(0);
+        milesPerPixel = milesPerPixel * 1.1;
+      }
+      if(keyCode == UP)
+      {
+          background(0);
+        milesPerPixel = milesPerPixel * 0.9;
+      }
+      if(keyCode == LEFT)
+      {
+        framesPerDay = framesPerDay * 0.9;
+      }
+      if(keyCode == RIGHT)
+      {
+        framesPerDay = framesPerDay * 1.1;
+      }
+    }
+  }
+}
+
+void mouseDragged()
+{
+  offsetX = offsetX + (mouseX - pmouseX);
+  offsetY = offsetY + (mouseY - pmouseY); 
+}
+{% endhighlight %}
+
+## Psychedelic example
+
 {% highlight java %}
 float r = 0.0;
 float r2 = 0.0;
