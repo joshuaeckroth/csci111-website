@@ -15,3 +15,20 @@ Using arrays and images and 2D transformations (translate/rotate), create a puzz
 - Rotate (spin) a piece if the right mouse button is held over the piece.
 - Note, you'll need for() loops to deal with the arrays, and pushMatrix()/popMatrix() to deal with the puzzle piece translations and rotations.
 
+Example code:
+
+```
+PImage[] pieces = new PImage[6];
+
+void setup()
+{
+  PImage cat = loadImage("Cat03.jpg");
+  pieces[0] = cat.get(0, 0, 200, 200); // x, y, width, height
+  pieces[1] = cat.get(200, 0, 200, 200);
+  pieces[2] ...
+  
+  // or, if different images:
+  pieces[0] = loadImage("image1.jpg");
+  pieces[1] = loadImage("image2.jpg");
+}
+```
