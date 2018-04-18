@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 7
-due: Mon Apr 23, 11:59pm
+due: Wed Apr 25, 11:59pm
 ---
 
 # Lab 7
