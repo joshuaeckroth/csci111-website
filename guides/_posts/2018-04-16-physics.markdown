@@ -101,6 +101,70 @@ Check out the
 
 ## Examples
 
+### Motor
+
+{% highlight java %}
+import fisica.*;
+
+FWorld world;
+FCircle wheel1;
+FPoly floor;
+FDistanceJoint axel;
+FBox box;
+
+void setup()
+{
+  size(600, 600);
+  Fisica.init(this);
+  
+  world = new FWorld();
+  
+  floor = new FPoly();
+  floor.vertex(0, 300);
+  floor.vertex(100, 500);
+  floor.vertex(400, 500);
+  floor.vertex(600, 300);
+  floor.vertex(600, 600);
+  floor.vertex(0, 600);
+  floor.setFill(0, 0, 0);
+  floor.setStatic(true);
+  floor.setFriction(10);
+  world.add(floor);
+  
+  wheel1 = new FCircle(100);
+  wheel1.setPosition(300, 200);
+  wheel1.setFill(0, 255, 0);
+  wheel1.setDensity(10);
+  wheel1.setFriction(10);
+  world.add(wheel1);
+  
+  box = new FBox(50, 50);
+  box.setPosition(200, 200);
+  world.add(box);
+  
+  axel = new FDistanceJoint(wheel1, box);
+  axel.calculateLength();
+  world.add(axel);
+  
+
+}
+
+void draw()
+{
+  background(255);
+  world.step();
+  world.drawDebug();
+  
+  if(keyPressed)
+  {
+    if(key == 'a')
+    {
+      wheel1.addTorque(10000);
+    }
+  }
+}
+{% endhighlight %}
+
 ### A circle in a world with gravity
 
 {% highlight java %}
