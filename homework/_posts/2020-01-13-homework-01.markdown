@@ -1,0 +1,21 @@
+---
+layout: post
+title: Homework 1
+---
+
+# Homework 1
+
+For your first program, you will be using some of your newly learned skills to code some simple projectile motion equations. The equations themselves are as follows:
+
+| Calculation | Units | Equation |
+|---
+| Horizontal distance | meters | $x = v_{x0}t$ |
+| Vertical height | meters | $y = v_{y0}t- (1/2) gt^2$ |
+| Vertical velocity | meters per second | $v_y = v_{y0}-gt$ |
+
+The acceleration of gravity, $g$, is a constant and equal to $9.8 m/s^2$. Requirements for this program are as follows:
+
+- your program must include a comment at the top with your name, the homework name (homework 1), and the purpose of the program
+- your program must ask the user to input values for the initial velocity in the x-direction, initial velocity in the y-direction (both in meters per second, or m/s) and time (in seconds, or s) using good descriptions that make it clear what you are asking for
+- your program must calculate horizontal distance traveled (in meters), vertical height of object (in meters, or m), and vertical velocity (in m/s) and store those values to variables
+- your program must print the output calculated above nicely with only two decimal places of precision for each variable

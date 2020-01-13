@@ -1,0 +1,163 @@
+---
+layout: post
+title: Syllabus
+---
+
+# Syllabus
+
+CSCI 111 - 03, Spring 2020 &mdash; Introduction to Computing
+
+Eliz Hall 210, Tu/Thur 10-11:15am
+
+An introduction to computing for non-computer science majors or those who have no previous programming experience. Introduction to elementary computer theory, algorithmic thinking, terminology and software applications in either a robotics or multimedia context.
+
+We will learn Python programming in this course.
+
+## About me
+
+- Joshua Eckroth, Assistant Professor of Computer Science, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu), [homepage](http://www2.stetson.edu/~jeckroth/)
+
+- Eliz Hall 214, 386-740-2519
+
+- Office hours: TBD
+
+## Textbook
+
+We will use the free textbook [Think Python 2e](https://greenteapress.com/wp/think-python-2e/) by Allen B. Downey. Grab the PDF or look at the web version of the book from that link. You can also buy a printed or Kindle version.
+
+## Homework
+
+We will have weekly homeworks most weeks. This amounts to about 10 homeworks overall. They will be relatively small and covering the topic we learned the prior week. Homework will be submitted on Blackboard's dropbox.
+
+Due to the number of students in the class and number of homeworks to grade, your submission will usually be graded just for completeness without detailed comments. Every homework, I will randomly choose five students for whom I will provide detailed comments. Every student will have the same number of homeworks reviewed for detailed comments, but the order is random.
+
+Late work receives no credit. We do this because the topics will progress quickly and it is detrimental to learning to focus on old topics while newer topics are under discussion.
+
+## Tests
+
+We will have two tests: a midterm and a final exam. These tests will be on paper. They will focus on short answer questions and small amounts of code; you will not be asked to write large programs.
+
+Test dates:
+
+- Midterm: Tuesday, Feb 18, in class
+- Final: Friday, May 1, 11am-1pm
+
+## Grading
+
+<table>
+<tr><td>Homework</td><td>40%</td></tr>
+<tr><td>Midterm</td><td>30%</td></tr>
+<tr><td>Final</td><td>30%</td></tr>
+</table>
+
+The grading scale will follow the typical A = 93-100, A- = 90-92, B+ = 87-89, etc. Attendance is expected but is not graded.
+
+## Schedule
+
+Week 1 (Jan 13-17)
+
+- variables, types, input/output
+- book chapters 1-2
+
+Week 2 (Jan 20-24)
+
+- simple functions
+- book chapter 3
+
+Week 3 (Jan 27-31)
+
+- advanced functions
+- book chapter 3
+
+Week 4 (Feb 3-7)
+
+- interface design, graphics
+- book chapter 4
+
+Week 5 (Feb 10-14)
+
+- conditionals
+- book chapter 5
+
+Week 6 (Feb 17-21)
+
+- midterm: Feb 18
+- simple recursion
+- book chapter 6
+
+Week 7 (Feb 24-28)
+
+- advanced recursion
+- book chapter 6
+
+Week 8 (Mar 9-13)
+
+- iteration
+- book chapter 7
+
+Week 9 (Mar 16-20)
+
+- lists
+- book chapter 10
+
+Week 10 (Mar 23-27)
+
+- dictionaries
+- book chapter 11
+
+Week 11 (Mar 30-Apr 3)
+
+- tuples and complex data structures
+- book chapters 12-13
+
+Week 12 (Apr 6-10)
+
+- files
+- book chapter 14
+
+Week 13 (Apr 13-17)
+
+- classes and objects
+- book chapter 15
+
+Week 14 (Apr 20-24)
+
+- TBD
+
+Week 15 (Apr 27-29)
+
+- TBD
+
+## Honor code
+
+I want you to utilize the internet, and each other, to learn
+Processing but also to learn how to learn. Outside the classroom,
+everyone references to the internet, colleagues, and sometimes books,
+to learn new technical material.
+
+However, with regards to your lab assignments, you must indicate any
+code that you copied, including the source web address of the
+code. You are required to contribute most of the code in your lab; do
+not turn in a lab mostly written by other people.
+
+I am strongly in agreement with the
+[Stetson University Honor Code](http://www.stetson.edu/other/honor-system/). Any
+form of cheating is not acceptable, will not be tolerated, and could
+lead to dismissal from the University. This includes plagiarism of any
+sort on quizzes, exams, or on projects.
+
+## Academic success center
+
+If a student anticipates barriers related to the format or
+requirements of a course, she or he should meet with the course
+instructor to discuss ways to ensure full participation. If
+disability-related accommodations are necessary, please register with
+the Academic Success Center (822-7127;
+[www.stetson.edu/asc](http://www.stetson.edu/asc)) and notify the
+course instructor of your eligibility for reasonable
+accommodations. The student, course instructor, and the Academic
+Success Center will plan how best to coordinate accommodations. The
+Academic Success Center is located at 209 E Bert Fish Drive, and can
+be contacted using the email address
+[asc@stetson.edu](mailto:asc@stetson.edu).
+
