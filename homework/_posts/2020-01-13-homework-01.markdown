@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Homework 1
+due: Tue Jan 21, 11:59pm
 ---
 
 # Homework 1
