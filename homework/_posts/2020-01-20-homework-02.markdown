@@ -1,0 +1,57 @@
+---
+layout: post
+title: Homework 2
+due: Tue Jan 28, 11:59pm
+---
+
+# Homework 2
+
+In this homework, you will write a financial calculator. You will ask the user for some basic information, then the program will calculate loan payment information of various kinds. Your program must use  a function for each calculation. See the details below.
+
+| Name | Variables | Formula |
+|---
+| Monthly payment | $P$, amount borrowed (principal); $N$, number of monthly payments; $r$, monthly interest rate (take yearly rate, like 0.05, and divide: 0.05/12 = 0.004167) | $c = \left(rP\right)/\left(1-(1+r)^{-N}\right)$ |
+| Total interest paid | $c$, monthly payment (from above); $N$, number of monthly payments; $P$, amount borrowed | $I = cN - P$ |
+| Months until loan is paid off | $r$, monthly interest rate; $c$, monthly payment; $A$, amount still owed | $M = -\log (1-rA/c)/\log(1+r)$ |
+
+- Ask the user for these values (and only these): amount borrowed ($P$), number of monthly payments ($N$), monthly interest rate ($r$), and amount remaining ($A$).
+- Create three functions, one each for calculating monthly payment, total interest paid, and months until loan is paid off. Make sure these functions have appropriate arguments (input variables) and the functions have meaningful names. The functions must return their calculated values and not print any information to the user.
+- Run the functions to get the calculated values, then print this information to the user. Show two decimal places.
+
+Hint: the $\log$ function is available by having `import math` at the top of your code and then typing `math.log` in the formula.
+
+Example runs:
+
+```
+Principal: 200000
+Num payments: 180
+Monthly interest rate: 0.005
+Amount remaining: 200000
+
+Monthly payment: 1687.71
+Total interest paid: 103788.46
+Months until loan is paid off: 180.00
+```
+
+```
+Principal: 200000
+Num payments: 180
+Monthly interest rate: 0.005
+Amount remaining: 100000
+
+Monthly payment: 1687.71
+Total interest paid: 103788.46
+Months until loan is paid off: 70.44
+```
+
+```
+Principal: 10500
+Num payments: 72
+Monthly interest rate: 0.0125
+Amount remaining: 8000
+
+Monthly payment: 222.02
+Total interest paid: 5485.63
+Months until loan is paid off: 48.18
+```
+

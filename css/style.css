@@ -48,3 +48,6 @@ code {
     padding: 0;
 }
 
+table {
+    max-height: none !important;
+}
