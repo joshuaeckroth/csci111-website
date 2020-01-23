@@ -36,6 +36,10 @@ pre, code, tt, code > span {
     font-family: "Ubunto Mono", monospace;
 }
 
+code {
+    line-height: 1.5 !important;
+}
+
 .post-date {
     color: #999;
 }
