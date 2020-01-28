@@ -1,0 +1,18 @@
+---
+layout: post
+title: Homework 3
+due: Tue Feb 4, 11:59pm
+---
+
+# Homework 3
+
+For your third program, you will use the turtle library to draw some interesting graphic design of your choice. Your design must have parts to it (e.g. if your design is an animal, the parts could be body, head, leg, etc., or if you draw a landscape, you could have tree, rock, sun, cloud). Each part that you include must be drawn from a function at a given position, with some other parameters passed in. For example, in the landscape example, you could include a function such as `def tree(xpos, ypos, tree size, leafcolor)`. Therefore, your graphic must have a number of functions that draw different parts and could be called repeatedly, for example, to draw a number of trees of different sizes, colors, and positions using your tree function. Of course, you can draw anything you want (not just a tree or landscape), so have fun with it, as long as you follow the requirements.
+
+Requirements for this program are as follows:
+
+1. your program must include a comment header with Author, Assignment (Program 3), and Due Date (please put each of these on a separate line.)
+2. your program must have at least four (4) parts, with a function being used for drawing these parts
+3. for each of your part functions, you must pass in the x- and y-location that you want the part drawn at, as well as at least some other attributes (e.g. colors, sizes, etc.)
+4. at least one of your part functions must include a for loop to draw some part of your graphic (e.g., a spiral, grid, polygon, etc.)
+5. your drawing must include text using turtle's write() function
+
