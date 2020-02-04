@@ -1,0 +1,37 @@
+---
+layout: post
+title: koch.py
+---
+
+# koch.py
+
+```
+import turtle
+
+def koch(t, step, size=400):
+    if step == 0:
+        t.forward(size)
+    else:
+        koch(t, step-1, size/3)
+        t.left(60)
+        koch(t, step-1, size/3)
+        t.right(120)
+        koch(t, step-1, size/3)
+        t.left(60)
+        koch(t, step-1, size/3)
+
+myturtle = turtle.Turtle()
+myturtle.penup()
+myturtle.goto(-200, 200)
+myturtle.pendown()
+myturtle.speed(0)
+
+# one-sided koch fractal:
+#koch(myturtle, 5)
+
+# snowflake:
+for i in range(4):
+    koch(myturtle, 5)
+    myturtle.right(90) # 360/4 = 90 degrees
+```
+

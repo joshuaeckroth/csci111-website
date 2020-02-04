@@ -1,0 +1,34 @@
+---
+layout: post
+title: tree.py
+---
+
+# tree.py
+
+```
+import turtle
+
+def tree(t, step):
+    if step != 0:
+        t.pensize(step*3)
+        t.forward(step*30)
+        t.left(45)
+        tree(t, step-1)
+        t.left(20)
+        tree(t, step-1)
+        t.right(75)
+        tree(t, step-1)
+        t.right(20)
+        tree(t, step-1)
+        t.left(30)
+        t.backward(step*30)
+
+myturtle = turtle.Turtle()
+myturtle.speed(0)
+myturtle.left(90)
+myturtle.penup()
+myturtle.goto(0, -400)
+myturtle.pendown()
+tree(myturtle, 7)
+```
+

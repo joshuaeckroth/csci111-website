@@ -1,0 +1,35 @@
+---
+layout: post
+title: bigfive.py
+---
+
+# bigfive.py
+
+```
+# Big Five Personality Test
+
+def get_input():
+    answer = int(input("1=very inaccurate, 3=neutral, 5=very accuracy: "))
+    return answer
+
+# five categories, so five scores
+# idx 0 = extraversion
+# idx 1 = agreeableness
+# idx 2 = conscientiousness
+# idx 3 = stability
+# idx 4 = imagination
+scores = [0, 0, 0, 0, 0]
+
+def q(msg, idx):
+    print(msg)
+    scores[idx] += get_input()
+
+q("I am the life of the party", 0)
+q("I feel little concern for others", 1)
+q("I get stressed out easily", 3)
+# etc. for rest of questions: https://ipip.ori.org/new_ipip-50-item-scale.htm
+
+print("Extraversion score: %d" % scores[0])
+# etc. for rest of scores
+```
+

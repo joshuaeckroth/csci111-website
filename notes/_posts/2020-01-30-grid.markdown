@@ -1,0 +1,48 @@
+---
+layout: post
+title: grid.py
+---
+
+# grid.py
+
+```
+# Lines & points for turtles
+
+import turtle
+
+def line(t, x, y, x2, y2, size=5, color="black"):
+    t.penup()
+    t.goto(x, y)
+    t.pensize(size)
+    t.pencolor(color)
+    t.pendown()
+    t.goto(x2, y2)
+
+def point(t, x, y, size=5, color="black"):
+    t.penup()
+    t.goto(x, y)
+    t.pensize(size)
+    t.pencolor(color)
+    t.pendown()
+    t.dot()
+
+def coordinate(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.write("%d,%d" % (x,y), font=("Arial", 10, "normal"))
+
+def grid(t, step):
+    for y in range(-500, 501, step):
+        line(t, -500, y, 500, y, 1)
+    for x in range(-500, 501, step):
+        line(t, x, -500, x, 500, 1)
+    for y in range(-500, 501, step):
+        for x in range(-500, 501, step):
+            coordinate(t, x, y)
+    
+myturtle = turtle.Turtle()
+myturtle.speed(0)
+grid(myturtle, 100)
+```
+
