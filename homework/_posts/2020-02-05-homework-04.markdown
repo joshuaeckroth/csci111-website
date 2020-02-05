@@ -1,0 +1,23 @@
+---
+layout: post
+title: Homework 4
+due: Tue Feb 11, 11:59pm
+---
+
+# Homework 4
+
+Write a program that uses conditionals (if/elif/else) in order to recommend a game. Use the table of data below to help determine the right recommendation. If you don't agree with the info in the table, feel free to define your own recommendations.
+
+| Game | Genre | Realism | Company | System | Age | Retro |
+|---
+| Mortal Kombat | Fighting | | Nether Realm | | Teen | Yes |
+| Mario Kart | Racing | No | Nintendo | | Everyone | Yes |
+| Need for Speed | Racing | Yes | | | Teen | Yes |
+| Madden | Sport | Yes | EA | Console | Teen,Adult | No |
+| Angry Birds | | | | Mobile | Everyone | No |
+| Clash of Clans | Civ | | | Mobile | Everyone | No |
+| Call of Duty | FPS | Yes | | | Teen | No |
+| Fortnite | Battle Royale | No | | | Child | No |
+| FIFA | Sport | | | Console | Teen,Adult | No |
+| GTA | Sandbox | Yes | | | Teen | No |
+| Pac-Man | Arcade | No | Midway | | Everyone | Yes |
