@@ -1,0 +1,23 @@
+---
+layout: post
+title: Homework 5
+due: Tue Mar 10, 11:59pm
+---
+
+# Homework 5
+
+Purpose: keep track of a record collection (using dictionaries)
+
+1. Let the user create a new artist
+2. Let the user create a new record (must provide artist name)
+3. Print current collection (dictionary contents) in nice format
+
+Requirements:
+
+- record data must be nested inside artist data
+- record must have title & year
+- use pickle to save/load data
+- create only a single dictionary (with nested dictionaries)
+
+
+
