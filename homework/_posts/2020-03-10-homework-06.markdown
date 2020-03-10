@@ -1,0 +1,16 @@
+---
+layout: post
+title: Homework 6
+due: Tue Mar 17, 11:59pm
+---
+
+# Homework 6
+
+Download the file `LoanStats_securev1_2019Q4.csv` from Blackboard. Open this file in your Python code and perform the following operations.
+
+1. Print the average (mean) loan and funded amounts.
+2. Print the largest and smallest interest rates.
+3. Save a csv file called `home_improvement_loans.csv` that contains all those loans whose "purpose" is `home_improvement`. Include only the columns `loan_amnt`, `funded_amnt`, and `int_rate`.
+4. Save a csv file called `employments.csv` that contains the count of rows for all employments found in the data (`emp_title` column). E.g., there are 68 rows with employment title "Rn" (registered nurse). There should be nearly 44k different employment titles.
+
+
