@@ -1,0 +1,23 @@
+---
+layout: post
+title: files.py
+---
+
+# files.py
+
+```
+# Files
+
+# reading a file (line by line)
+with open("C:\\Users\\jeckroth\\Desktop\\testfile.txt") as f:
+    # read one line: f.readline()
+    # or loop through every line:
+    for line in f:
+        # strip removes spaces/newlines at start and end of line
+        print(line.strip())
+
+# writing a file
+with open("C:\\Users\\jeckroth\\Desktop\\testfile2.txt", "w") as f:
+    f.write("Line 1\n")
+    f.write("Line 2\n")
+```

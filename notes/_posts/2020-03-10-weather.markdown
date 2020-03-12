@@ -1,0 +1,44 @@
+---
+layout: post
+title: weather.py
+---
+
+# weather.py
+
+```
+# Reading CSV files
+
+import csv
+
+# Calculate average max temp
+max_temps = []
+with open("C:\\Users\\jeckroth\\Desktop\\deland_weather.csv") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        max_temp = float(row['MAX TEMP'])
+        if max_temp > -99:
+            max_temps.append(max_temp)
+
+from statistics import mean
+print("Average max overall: %.2f" % mean(max_temps))
+
+# Create CSV files with only December dates, max temp only
+good_rows = []
+with open("C:\\Users\\jeckroth\\Desktop\\deland_weather.csv") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        max_temp = float(row['MAX TEMP'])
+        month = int(row['MONTH'])
+        year = int(row['YEAR'])
+        day = int(row['DAY'])
+        if month == 12 and max_temp > -99:
+            good_rows.append({"Date": "%d-%d-%d" % (year, month, day),
+                              "MaxTemp": max_temp})
+
+# ...now save CSV file
+with open("C:\\Users\\jeckroth\\Desktop\\deland_weather_december.csv", "w", newline='') as f:
+    writer = csv.DictWriter(f, ["Date", "MaxTemp"])
+    writer.writeheader()
+    for row in good_rows:
+        writer.writerow(row)
+```
