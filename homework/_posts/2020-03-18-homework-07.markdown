@@ -1,0 +1,53 @@
+---
+layout: post
+title: Homework 7
+due: Thur Mar 26, 11:59pm
+---
+
+# Homework 7
+
+This assignment asks you to practice with "regular expressions" (`import re`) to create a [Mad Libs](http://www.madlibs.com/) program. A madlib is a story that has blank words. The player is asked to give a list of words that will be inserted into the story. But the player doesn't know how the words will be used; he/she is only asked to give a noun, an adjective, etc. without knowing what the story is first. Then, the player is shown the complete story, and it can be funny at times.
+
+Your program should ask the user for a filename that contains a story with missing words ("tags"). These missing words will have this format: `{noun1}` or similar (adjective, plural\_noun, whatever), always in braches (`{}`). The program uses a regular expression to find each `{}` tag and asks the user for the value for that tag. Then the program replaces every occurrence of that tag (there could be more than one occurrence of the same tag) with the word the user typed. Then the program asks for the word for the next tag, until there are none left. Finally, the program prints the story that the user created.
+
+Here is an example madlib input file:
+
+```
+Once upon a time, there was a {noun} named Cinderella. She lived
+in a small town with her two {plural_noun}. They were very {adjective}
+and unkind. They were also very lazy, and they made Cinderella do
+all the work. One day, the king and queen invited all of them to
+an important party, to {verb} and meet the {adjective2} prince. The
+{plural_noun} were very excited. They wore {adjective3} {plural_noun2},
+but they didn't allow Cinderella to come with them. Cinderella was
+so sad! She {past_tense_verb} and {past_tense_verb2}. Suddenly, a
+strange {noun2} appeared. She was Cinderella’s Fairy Godmother.
+```
+
+Here is an example of running the program (note, when you give the filename on Windows, in this situation you do not need double slashes):
+
+
+```
+Enter filename: C:\Users\Josh\Documents\cinderella.txt
+Provide noun: dog
+Provide plural_noun: lamp shades
+Provide adjective: blue
+Provide verb: break
+Provide adjective2: ugly
+Provide adjective3: beautiful
+Provide plural_noun2: hammers
+Provide past_tense_verb: punched
+Provide past_tense_verb2: kicked
+Provide noun2: ice cream
+
+Once upon a time, there was a dog named Cinderella. She lived
+in a small town with her two lamp shades. They were very blue
+and unkind. They were also very lazy, and they made Cinderella do
+all the work. One day, the king and queen invited all of them to
+an important party, to break and meet the ugly prince. The
+lamp shades were very excited. They wore beautiful hammers,
+but they didn't allow Cinderella to come with them. Cinderella was
+so sad! She punched and kicked. Suddenly, a
+strange ice cream appeared. She was Cinderella’s Fairy Godmother.
+```
+
