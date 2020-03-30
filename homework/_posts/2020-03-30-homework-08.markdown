@@ -1,0 +1,124 @@
+---
+layout: post
+title: Homework 8
+due: Mon Apr 6, 11:59pm
+---
+
+# Homework 8
+
+This assignment helps you practice with "classes". Read the book for guidance: [Chapter 15](http://www.greenteapress.com/thinkpython/html/thinkpython016.html) and [Chapter 17](http://www.greenteapress.com/thinkpython/html/thinkpython018.html).
+
+I've written another version of the album database (from [Homework 5](/homework/2020-02-25-homework-05.html)), this time using a class to represent an album. The class keeps track of the album's artist, title, year, and a list of ratings. Your task is to write this class. The rest of the code should remain unchanged.
+
+Here is the code. Refer to the comments in the code for an explanation of your task. Also see the expected output below; your solution should reproduce this output.
+
+```
+import pickle
+import os
+import statistics
+
+### Your class definition goes here. Name the class Album.
+### Notice how the class is used in the code below
+### (which functions exist, etc.).
+### You must not create any new variables outside the class;
+### the purpose is to create a class only, no extra code.
+### Make sure your code recreates the example output below.
+
+
+
+
+
+def get_rating(album):
+    rating = float(input("Enter rating: "))
+    album.add_rating(rating)
+
+def get_album():
+    artist = input("Artist: ")
+    title = input("Album title: ")
+    year = int(input("Album year: "))
+    album = Album(artist, title, year)
+    get_rating(album)
+    return album
+
+if os.path.exists("albumsHW08.pkl"):
+    with open("albumsHW08.pkl", "rb") as f:
+        albums = pickle.load(f)
+else:
+    albums = []
+
+while True:
+    print("Albums in database:")
+    for i in range(len(albums)):
+        print("===== %d =====" % i)
+        albums[i].print()
+    print()
+    print("Type new to enter a new album, type rate to rate an album.")
+    answer = input("Command: ")
+    if answer == "new":
+        albums.append(get_album())
+    elif answer == "rate":
+        idx = int(input("Enter album # from list above: "))
+        if idx < 0 or idx >= len(albums):
+            print("Bad #")
+        else:
+            get_rating(albums[idx])
+    else:
+        print("Exiting...")
+        break
+
+with open("albumsHW08.pkl", "wb") as f:
+    pickle.dump(albums, f)
+```
+
+Example output:
+
+```
+Albums in database:
+
+Type new to enter a new album, type rate to rate an album.
+Command: new
+Artist: Nicolas Jaar
+Album title: Cenizas
+Album year: 2020
+Enter rating: 5.0
+Albums in database:
+===== 0 =====
+Nicolas Jaar - Cenizas (2020), 1 ratings, 5.00 avg rating
+
+Type new to enter a new album, type rate to rate an album.
+Command: new
+Artist: Talk Talk
+Album title: Laughing Stock
+Album year: 1991
+Enter rating: 4.7
+Albums in database:
+===== 0 =====
+Nicolas Jaar - Cenizas (2020), 1 ratings, 5.00 avg rating
+===== 1 =====
+Talk Talk - Laughing Stock (1991), 1 ratings, 4.70 avg rating
+
+Type new to enter a new album, type rate to rate an album.
+Command: rate
+Enter album # from list above: 0
+Enter rating: 4.5
+Albums in database:
+===== 0 =====
+Nicolas Jaar - Cenizas (2020), 2 ratings, 4.75 avg rating
+===== 1 =====
+Talk Talk - Laughing Stock (1991), 1 ratings, 4.70 avg rating
+
+Type new to enter a new album, type rate to rate an album.
+Command: rate
+Enter album # from list above: 0
+Enter rating: 3.9
+Albums in database:
+===== 0 =====
+Nicolas Jaar - Cenizas (2020), 3 ratings, 4.47 avg rating
+===== 1 =====
+Talk Talk - Laughing Stock (1991), 1 ratings, 4.70 avg rating
+
+Type new to enter a new album, type rate to rate an album.
+Command: quit
+Exiting...
+```
+
