@@ -1,0 +1,15 @@
+---
+layout: post
+title: Homework 9
+due: Mon Apr 13, 11:59pm
+---
+
+# Homework 9
+
+Exactly recreate the layout and words shown below. For help, refer to the video about [layouts](https://youtu.be/zNF3YC_TJ2I) and [this homework](https://youtu.be/v5URe24OLVw) and look at the [Tkinter book](https://effbot.org/tkinterbook/).
+
+<center>
+<img src="/images/homework09.png" />
+</center>
+
+
