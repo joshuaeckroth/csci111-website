@@ -12,4 +12,3 @@ Exactly recreate the layout and words shown below. For help, refer to the video 
 <img src="/images/homework09.png" />
 </center>
 
-
