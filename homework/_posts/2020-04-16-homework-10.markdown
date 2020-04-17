@@ -1,0 +1,30 @@
+---
+layout: post
+title: Homework 10
+due: Fri Apr 24, 11:59pm
+---
+
+# Homework 10
+
+This homework asks you to rebuild the album editor for Tk. The GUI (graphical user interface) will allow a user to click an album to update. The user can change the album title and year. Another button allows creating new albums.
+
+Your code does not need to use pickle to open/save the album data; just make a simple starting list of a couple albums (a list of dictionaries, as before).
+
+Refer to this [video](/notes/2020-04-16-tkinter-interactivity.html) and the [Tkinter book](https://effbot.org/tkinterbook/tkinter-index.htm#class-reference).
+
+Here is the layout you should recreate:
+
+<center>
+<img src="/images/homework10.png" />
+</center>
+
+The behavior should be as follows:
+
+- Use a list of dictionaries to keep track of the album data.
+- When the program starts, there should be at least two albums already in the list. The list should only show album titles.
+- After the user clicks an album title in the list, they can click "Get Album", which causes the album title and year to appear in the respective text boxes.
+- If the user updates the album title or year in the text boxes, the user can then click "Save Album", which causes the text boxes to clear and the list to reflect the new album data.
+- If the user clicks "New Album" (regardless of whether an album is selected), the text boxes are cleared and a new item is shown on the list with the title "(No Title)".
+
+
+
